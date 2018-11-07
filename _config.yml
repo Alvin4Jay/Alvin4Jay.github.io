@@ -1,28 +1,27 @@
 # Site settings
-title: BY Blog
-SEOTitle: 柏荧的博客 | BY Blog
+title: AlvinJay Blog
+SEOTitle: AlvinJay的博客 | AlvinJay Blog
 header-img: img/post-bg-desk.jpg
-email: qiubaiying@gmail.com
+email: xuweijay@gmail.com
 description: "Every failure is leading towards success."
-keyword: "BY, BY Blog, 柏荧的博客, qiubaiying, 邱柏荧, iOS, Apple, iPhone"
-url: "http://qiubaiying.github.io"          # your host, for absolute URL
+keyword: "AlvinJay, AlvinJay Blog, AlvinJay的博客, Java, Middleware, IDEA"
+url: "https://xuanjian1992.top/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
+github_repo: "https://github.com/Alvin4Jay/Alvin4Jay.github.io" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar_m.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # SNS settings
 RSS: false
 # weibo_username:     qiubaiying
-zhihu_username:     qiubaiying
-github_username:    qiubaiying
-facebook_username:  baiying.qiu.7
-jianshu_username:   e71990ada2fd
+github_username:    Alvin4Jay
+facebook_username:  jay.xu.77
+jianshu_username:   8027e66063cb
 #twitter_username:   qiubaiying
 
 
@@ -62,11 +61,11 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
-  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
-  repo: qiubaiying.github.io    #仓库名称
-  owner: qiubaiying    #github用户名
-  admin: qiubaiying
+  clientID: aecc9dde5f63b70feb49                            #生成的clientID
+  clientSecret: 7be03de2f36c78de81ae3593262d61301672c1cd    #生成的clientSecret
+  repo: Alvin4Jay.github.io    #仓库名称
+  owner: Alvin4Jay    #github用户名
+  admin: Alvin4Jay
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
