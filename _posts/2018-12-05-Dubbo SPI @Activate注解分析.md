@@ -15,7 +15,7 @@ tags:
 
 `Dubbo @Activate`注解机制是对`Dubbo SPI`机制的扩展，该注解用在`SPI`接口实现的定义上，表明这些`SPI`扩展接口的实现类被激活或者不被激活的条件，比如`Filter`接口有很多实现，如`AccessLogFilter/GenericImplFilter`等，`Dubbo` 框架在`RPC`调用过程中可指定具体的条件，与这些`SPI`接口实现类`@Activate`注解上要求的条件进行匹配，成功则这些`SPI`实现类激活，否则不被激活，从而在`RPC`调用中起到作用。
 
-## @Activate注解
+### @Activate注解
 
 `@Activate`注解可以注解在类和方法上，该注解定义如下:
 
@@ -81,7 +81,7 @@ public class GenericImplFilter implements Filter {
 }
 ```
 
-## Dubbo SPI中激活扩展的实现解析
+### Dubbo SPI中激活扩展的实现解析
 
 上述表明了`@Activate`注解可以配置`SPI`实现类被激活使用的条件，下面分析`Dubbo SPI`如何指定条件，找到匹配的`SPI`扩展实现，实现过程在`ExtensionLoader`中。
 
@@ -250,6 +250,83 @@ private boolean isActive(Activate activate, URL url) {
 - `@Activate`中的`value`是参数是第二层过滤参数（第一层是通过`group`），在`group`校验通过的前提下，如果url中的参数（`k`）与值（`v`）中的参数名同`@Activate`中的`value`值一致或者包含，那么才会被选中。相当于加入了`value`后，条件更为苛刻点，需要`url`中有此参数并且参数必须存在有效值。
 - `@Activate`的`order`参数对于同一个类型的多个扩展来说，`order`值越小，优先级越高。
 
-## 应用场景
+### 应用场景
 
 主要用在`filter`上，有的`filter`需要在`provider`边执行，有的需要在`consumer`边执行，根据`url`中的参数指定和`group`(`provider`还是`consumer`)，运行时决定哪些`filter`需要被引入执行。
+
+### TestCase
+
+##### 实现一个Filter
+
+```java
+/**
+ * LogFilter 自定义Filter，测试Dubbo SPI @Activate机制
+ */
+@Activate(value = {"log"}, group = {Constants.CONSUMER}, order = -11000)
+public class LogFilter implements Filter {
+    @Override
+    public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
+        System.out.println(invoker.getUrl());
+        return null;
+    }
+}
+```
+
+##### 测试
+
+1.
+
+```java
+/**
+ * ExtensionLoader.getActivateExtension()测试
+ */
+public class FilterTest {
+    public static void main(String[] args) {
+        URL url = URL.valueOf("test://localhost/test?generic=true");
+        List<Filter> filters = ExtensionLoader.getExtensionLoader(Filter.class)
+                .getActivateExtension(url, new String[]{Constants.REMOVE_VALUE_PREFIX + Constants.DEFAULT_KEY, "log"}, Constants.CONSUMER);
+        System.out.println("size: " + filters.size()
+                + "---" + Arrays.toString(filters.toArray(new Filter[0])));
+    }
+}
+// 输出:
+// size: 4---[com.alibaba.dubbo.rpc.filter.ConsumerContextFilter@589838eb, com.wacai.dubbo.rpc.filter.NinjaTraceFilter@42dafa95, com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter@6500df86, com.alibaba.dubbo.rpc.filter.GenericImplFilter@402a079c]
+```
+
+2.
+
+```java
+/**
+ * ExtensionLoader.getActivateExtension()测试
+ */
+public class FilterTest {
+    public static void main(String[] args) {
+        URL url = URL.valueOf("test://localhost/test?generic=true&log=true");
+        List<Filter> filters = ExtensionLoader.getExtensionLoader(Filter.class)
+                .getActivateExtension(url, new String[]{}, Constants.CONSUMER);
+        System.out.println("size: " + filters.size()
+                + "---" + Arrays.toString(filters.toArray(new Filter[0])));
+    }
+}
+// 输出:
+// size: 5---[com.wacai.midldleware.dubbospi.activate.LogFilter@589838eb, com.alibaba.dubbo.rpc.filter.ConsumerContextFilter@42dafa95, com.wacai.dubbo.rpc.filter.NinjaTraceFilter@6500df86, com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter@402a079c, com.alibaba.dubbo.rpc.filter.GenericImplFilter@59ec2012]
+```
+
+3.
+
+```java
+/**
+ * ExtensionLoader.getActivateExtension()测试
+ */
+public class FilterTest {
+    public static void main(String[] args) {
+        URL url = URL.valueOf("test://localhost/test?generic=true&log=true");
+        List<Filter> filters = ExtensionLoader.getExtensionLoader(Filter.class)
+                .getActivateExtension(url, new String[]{Constants.REMOVE_VALUE_PREFIX + Constants.DEFAULT_KEY, "log"}, Constants.CONSUMER);
+        System.out.println("size: " + filters.size()
+                + "---" + Arrays.toString(filters.toArray(new Filter[0])));
+    }
+}
+// 输出:
+// size: 1---[com.wacai.midldleware.dubbospi.activate.LogFilter@2280cdac]
+```
