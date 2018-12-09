@@ -45,17 +45,17 @@ public @interface Activate {
     String[] value() default {};
 
     /**
-     * 排序信息，可以不提供。
+     * 排序信息，可以不提供。值为扩展点的名字name
      */
     String[] before() default {};
 
     /**
-     * 排序信息，可以不提供。
+     * 排序信息，可以不提供。值为扩展点的名字name
      */
     String[] after() default {};
 
     /**
-     * 排序信息，可以不提供。
+     * 排序信息，可以不提供。 值为顺序值int
      */
     int order() default 0;
 }
@@ -69,7 +69,7 @@ public @interface Activate {
 // -8000.
 @Activate(group = Constants.PROVIDER, value = Constants.ACCESS_LOG_KEY, order = -8000)
 public class AccessLogFilter implements Filter {
-    
+    // ...
 }
 
 // GenericImplFilter，指定如果Filter使用方属于Constants.CONSUMER(consumer)，并且URL中包含有效的
@@ -133,7 +133,7 @@ public List<T> getActivateExtension(URL url, String key, String group) {
 /**
  * 获取激活的扩展(最终的激活匹配逻辑在这里)
  * @param url    url
- * @param values 扩展定实现类的名字，用户指定的扩展点实例类
+ * @param values 扩展点实现类的名字，用户指定的扩展点实例类
  * @param group  用户指定的组
  * @return 激活的扩展点
  * @see com.alibaba.dubbo.common.extension.Activate
@@ -170,10 +170,10 @@ public List<T> getActivateExtension(URL url, String[] values, String group) {
                 }
             }
         }
-        // 根据Activate注解的before、after、order信息，对Activate实例排序
+        // 根据Activate注解的before、after、order信息，对匹配的扩展点实现类实例排序
         Collections.sort(exts, ActivateComparator.COMPARATOR);
     }
-    List<T> usrs = new ArrayList<T>(); // usrs暂存扩展点实例类
+    List<T> usrs = new ArrayList<T>(); // usrs暂存扩展点实现类
     for (int i = 0; i < names.size(); i++) {
         String name = names.get(i);
         // name不是以-开始，或者names不包含-name(没有排除name)
@@ -244,19 +244,83 @@ private boolean isActive(Activate activate, URL url) {
 }
 ```
 
+```java
+// 带有@Activate注解的扩展点实现类的比较器
+public class ActivateComparator implements Comparator<Object> {
+	
+    public static final Comparator<Object> COMPARATOR = new ActivateComparator();
+
+    @Override
+    public int compare(Object o1, Object o2) {
+        if (o1 == null && o2 == null) {
+            return 0;
+        }
+        if (o1 == null) {
+            return -1;
+        }
+        if (o2 == null) {
+            return 1;
+        }
+        if (o1.equals(o2)) {
+            return 0;
+        }
+        Activate a1 = o1.getClass().getAnnotation(Activate.class);
+        Activate a2 = o2.getClass().getAnnotation(Activate.class);
+        // 如果配置了before和after信息，则根据这些信息进行比较
+        if ((a1.before().length > 0 || a1.after().length > 0
+                || a2.before().length > 0 || a2.after().length > 0)
+                && o1.getClass().getInterfaces().length > 0
+                && o1.getClass().getInterfaces()[0].isAnnotationPresent(SPI.class)) {
+            ExtensionLoader<?> extensionLoader = ExtensionLoader.getExtensionLoader(o1.getClass().getInterfaces()[0]);
+            if (a1.before().length > 0 || a1.after().length > 0) {
+                String n2 = extensionLoader.getExtensionName(o2.getClass());
+                for (String before : a1.before()) {
+                    if (before.equals(n2)) {
+                        return -1;
+                    }
+                }
+                for (String after : a1.after()) {
+                    if (after.equals(n2)) {
+                        return 1;
+                    }
+                }
+            }
+            if (a2.before().length > 0 || a2.after().length > 0) {
+                String n1 = extensionLoader.getExtensionName(o1.getClass());
+                for (String before : a2.before()) {
+                    if (before.equals(n1)) {
+                        return 1;
+                    }
+                }
+                for (String after : a2.after()) {
+                    if (after.equals(n1)) {
+                        return -1;
+                    }
+                }
+            }
+        }
+        // 否则根据order信息进行比较
+        int n1 = a1 == null ? 0 : a1.order();
+        int n2 = a2 == null ? 0 : a2.order();
+        return n1 > n2 ? 1 : -1; // 就算n1 == n2也不能返回0，否则在HashSet等集合中，会被认为是同一值而覆盖
+    }
+
+}
+```
+
 根据上面的源码分析，可以得到如下的结论：
 
 - 根据`ExtensionLoader.getActivateExtension`中的`group`和搜索到该SPI接口类型的扩展点实现类进行比较，如果`group`能匹配到，进行下一步`value`的匹配。
-- `@Activate`中的`value`是参数是第二层过滤参数（第一层是通过`group`），在`group`校验通过的前提下，如果url中的参数（`k`）与值（`v`）中的参数名同`@Activate`中的`value`值一致或者包含，那么才会被选中。相当于加入了`value`后，条件更为苛刻点，需要`url`中有此参数并且参数必须存在有效值。
+- `@Activate`中的`value`是第二层过滤参数（第一层是通过`group`），在`group`校验通过的前提下，如果url中的参数（`k`）与值（`v`）中的参数名同`@Activate`中的`value`值一致或者包含，那么才会被选中。相当于加入了`value`后，条件更为苛刻点，需要`url`中有此参数并且参数必须存在有效值。
 - `@Activate`的`order`参数对于同一个类型的多个扩展来说，`order`值越小，优先级越高。
 
 ### 应用场景
 
-主要用在`filter`上，有的`filter`需要在`provider`边执行，有的需要在`consumer`边执行，根据`url`中的参数指定和`group`(`provider`还是`consumer`)，运行时决定哪些`filter`需要被引入执行。
+主要用在`Filter`上，有的`Filter`需要在`provider`边执行，有的需要在`consumer`边执行，根据`url`中的参数指定和`group`(`provider`还是`consumer`)，运行时决定哪些`filter`需要被引入执行。
 
 ### TestCase
 
-##### 实现一个Filter
+#### 实现一个Filter
 
 ```java
 /**
@@ -270,21 +334,28 @@ public class LogFilter implements Filter {
         return null;
     }
 }
+
+
 ```
 
-##### 测试
+```java
+// resources目录下新建META-INF/dubbo/internal/com.alibaba.dubbo.rpc.Filter文件，内容为
+log=com.wacai.midldleware.dubbospi.activate.LogFilter
+```
+
+#### 测试
 
 1.
 
 ```java
 /**
- * ExtensionLoader.getActivateExtension()测试
+ * ExtensionLoader.getActivateExtension()测试1
  */
 public class FilterTest {
     public static void main(String[] args) {
         URL url = URL.valueOf("test://localhost/test?generic=true");
         List<Filter> filters = ExtensionLoader.getExtensionLoader(Filter.class)
-                .getActivateExtension(url, new String[]{Constants.REMOVE_VALUE_PREFIX + Constants.DEFAULT_KEY, "log"}, Constants.CONSUMER);
+                .getActivateExtension(url, new String[]{}, Constants.CONSUMER);
         System.out.println("size: " + filters.size()
                 + "---" + Arrays.toString(filters.toArray(new Filter[0])));
     }
@@ -297,7 +368,7 @@ public class FilterTest {
 
 ```java
 /**
- * ExtensionLoader.getActivateExtension()测试
+ * ExtensionLoader.getActivateExtension()测试2
  */
 public class FilterTest {
     public static void main(String[] args) {
@@ -316,7 +387,7 @@ public class FilterTest {
 
 ```java
 /**
- * ExtensionLoader.getActivateExtension()测试
+ * ExtensionLoader.getActivateExtension()测试3
  */
 public class FilterTest {
     public static void main(String[] args) {
@@ -330,3 +401,5 @@ public class FilterTest {
 // 输出:
 // size: 1---[com.wacai.midldleware.dubbospi.activate.LogFilter@2280cdac]
 ```
+
+4. 其他测试用例和`demo`见`dubbo`源码测试用例。
