@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Spring xml配置:` <context:annotation-config`与`<context:component-scan>`比较
+title:      Spring xml配置:`context:annotation-config`与`context:component-scan`比较
 subtitle:   
 date:       2018-12-11
 author:     Jay
@@ -10,7 +10,7 @@ tags:
     - Spring
 ---
 
-#Spring xml配置:` <context:annotation-config`与`<context:component-scan>`比较
+# Spring xml配置:`context:annotation-config`与`context:component-scan`比较
 
 ### 两者区别
 
@@ -177,6 +177,6 @@ Setting bean reference to BeanC
 
 ###参考
 
-1. [Spring MVC: <context:annotation-config> vs <context:component-scan>](https://howtodoinjava.com/spring-mvc/spring-mvc-difference-between-contextannotation-config-vs-contextcomponent-scan/)
-2. [Spring配置文件详解：<context:annotation-config/>和<context:component-scan base-package=""/>和<mvc:annotation-driven />](https://www.cnblogs.com/lcngu/p/5080702.html)
+1. [Spring MVC: context:annotation-config vs context:component-scan](https://howtodoinjava.com/spring-mvc/spring-mvc-difference-between-contextannotation-config-vs-contextcomponent-scan/)
+2. [Spring配置文件详解：context:annotation-config和context:component-scan和mvc:annotation-driven](https://www.cnblogs.com/lcngu/p/5080702.html)
 
