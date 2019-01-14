@@ -10,7 +10,7 @@ tags:
     - Spring
 ---
 
-# Spring框架中自定义XML标签
+# Spring框架中自定义XML标签及解析过程分析
 
 转自[李懿名-spring自定义xml标签](https://blog.csdn.net/lilongjiu/article/details/76695310)
 
@@ -20,12 +20,12 @@ tags:
 
 自定义标签涉及的核心接口为：
 
-- `NamespaceHandler`
-- `BeanDefinitionParser`
+- `NamespaceHandler`——命名空间处理器
+- `BeanDefinitionParser`——`BeanDefinition`解析器
   实际使用的时候，**一般**分别继承类：
 
-- `NamespaceHandlerSupport：init`
-- `AbstractSingleBeanDefinitionParser：parse`
+- `NamespaceHandlerSupport：init()`
+- `AbstractBeanDefinitionParser：parse()`
 
 以`spring`事务标签为例（前提：要了解`bean`注册过程）：
 
@@ -48,7 +48,8 @@ org.springframework.context.support.AbstractApplicationContext#refresh
 org.springframework.context.support.AbstractApplicationContext#obtainFreshBeanFactory 
 org.springframework.context.support.AbstractApplicationContext#refreshBeanFactory 
 org.springframework.context.support.AbstractRefreshableApplicationContext#refreshBeanFactory 
-org.springframework.context.support.AbstractRefreshableApplicationContext#loadBeanDefinitions org.springframework.context.support.AbstractXmlApplicationContext#loadBeanDefinitions(org.springframework.beans.factory.support.DefaultListableBeanFactory)
+org.springframework.context.support.AbstractRefreshableApplicationContext#loadBeanDefinitions
+org.springframework.context.support.AbstractXmlApplicationContext#loadBeanDefinitions(org.springframework.beans.factory.support.DefaultListableBeanFactory)
 ```
 
 - 在第3步中 **`registerBeanDefinitions`** 调用 **`createReaderContext`**
@@ -100,7 +101,7 @@ public DefaultNamespaceHandlerResolver(ClassLoader classLoader) {
 public DefaultNamespaceHandlerResolver(ClassLoader classLoader, String handlerMappingsLocation) {
     Assert.notNull(handlerMappingsLocation, "Handler mappings location must not be null");
     this.classLoader = (classLoader != null ? classLoader : ClassUtils.getDefaultClassLoader());
-    this.handlerMappingsLocation = handlerMappingsLocation;
+    this.handlerMappingsLocation = handlerMappingsLocation; // 重要，命名空间处理器位置
 }
 ```
 
@@ -147,7 +148,7 @@ protected void doRegisterBeanDefinitions(Element root) {
 }
 ```
 
-**`delegate.parseCustomElement(ele);`** 这一行代码是解析自定义标签
+**`delegate.parseCustomElement(ele);`** 这一行代码是**解析自定义标签**
 
 ```java
 // class DefaultBeanDefinitionDocumentReader
@@ -168,7 +169,7 @@ protected void parseBeanDefinitions(Element root, BeanDefinitionParserDelegate d
         }
     }
     else {
-        delegate.parseCustomElement(root);
+        delegate.parseCustomElement(root); // 解析自定义标签
     }
 }
 ```
