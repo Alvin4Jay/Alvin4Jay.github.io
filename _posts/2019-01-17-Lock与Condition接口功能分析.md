@@ -62,7 +62,7 @@ try {
   - 相比前面两种阻塞式获取的方式，该方法是有返回值的，获取锁成功返回`true`，获取锁失败了返回`false`。
 - `tryLock(long time, TimeUnit unit)`
   - **带超时机制，并且可中断**；
-  - 如果可以获取带锁，则立即返回`true`；
+  - 如果可以获取到锁，则立即返回`true`；
   - 如果获取不到锁，则当前线程将会休眠，不会参与线程调度，直到以下三个条件之一被满足：
     - 当前线程获取到了锁；
     - 其它线程中断了当前线程；
@@ -199,3 +199,8 @@ boolean awaitUntil(Date deadline) throws InterruptedException;
 `boolean awaitUntil(Date deadline)`和`boolean await(long time, TimeUnit unit)` 其实作用差不多，返回值代表的含义也一样，只不过一个是相对时间，一个是绝对时间，`awaitUntil`方法的参数是`Date`，表示了一个绝对的时间，即截止日期，在这个日期之前，该方法会一直等待，除非被`signal`或者被中断。
 
 至此，`Lock`接口和`Condition`接口的功能就介绍完了。
+
+### 参考
+
+- [线程间的同步与通信(4)——Lock 和 Condtion](https://segmentfault.com/a/1190000016449988)
+- [逐行分析AQS源码(4)——Condition接口实现](https://segmentfault.com/a/1190000016462281)
