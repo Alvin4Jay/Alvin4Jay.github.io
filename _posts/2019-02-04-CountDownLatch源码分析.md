@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      CountDownLatch源码分析.md
+title:      CountDownLatch源码分析
 subtitle:   CountDownLatch
 date:       2019-02-04
 author:     Jay
