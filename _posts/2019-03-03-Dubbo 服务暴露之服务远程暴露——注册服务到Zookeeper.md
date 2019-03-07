@@ -76,7 +76,7 @@ private URL getRegistryUrl(Invoker<?> originInvoker) {
 
 ### 二、创建ZookeeperRegistry实例
 
-#####1.RegistryProtocol.getRegistry(final Invoker<?> originInvoker)
+##### 1.RegistryProtocol.getRegistry(final Invoker<?> originInvoker)
 
 ```java
 // 连接Zookeeper注册中心，获取注册中心实例(ZookeeperRegistry)
@@ -116,7 +116,7 @@ private Registry getRegistry(final Invoker<?> originInvoker) {
 
 之后使用注册中心工厂`RegistryFactory`来创建注册中心。
 
-#####2.RegistryFactory$Adaptive.getRegistry(com.alibaba.dubbo.common.URL registryUrl)
+##### 2.RegistryFactory$Adaptive.getRegistry(com.alibaba.dubbo.common.URL registryUrl)
 
 ```java
 public class RegistryFactory$Adaptive implements com.alibaba.dubbo.registry.RegistryFactory {
@@ -139,7 +139,7 @@ public class RegistryFactory$Adaptive implements com.alibaba.dubbo.registry.Regi
 
 `getRegistry`方法在`ZookeeperRegistryFactory`的父类`AbstractRegistryFactory`中。
 
-#####3.AbstractRegistryFactory.getRegistry(URL registryUrl)
+##### 3.AbstractRegistryFactory.getRegistry(URL registryUrl)
 
 ```java
 @Override
@@ -871,7 +871,7 @@ public void register(URL registryUrl, URL registeredProviderUrl) {
 
 这里的`registry`是`ZookeeperRegistry`。`registry.register(registeredProviderUrl)`方法在`ZookeeperRegistry`的父类`FailbackRegistry`中实现。
 
-#####1.FailbackRegistry.register(registedProviderUrl)
+##### 1.FailbackRegistry.register(registedProviderUrl)
 
 ```java
 // 注册数据
@@ -929,7 +929,7 @@ public void register(URL url) {
 
 下面看真正的注册逻辑`doRegister(url)`。
 
-#####2.ZookeeperRegistry.doRegister(registedProviderUrl)
+##### 2.ZookeeperRegistry.doRegister(registedProviderUrl)
 
 ```java
 // 创建服务配置URL叶子节点。

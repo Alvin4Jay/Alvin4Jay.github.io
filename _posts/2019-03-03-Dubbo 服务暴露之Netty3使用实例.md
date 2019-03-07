@@ -182,7 +182,7 @@ public class Client {
 - 为`ClientBootstrap`设置`ChannelPipelineFactory`工厂，并为`ChannelPipelineFactory`将来创建出的`ChannelPipeline`设置编码器／解码器／逻辑处理器；
 - 使用`ClientBootstrap`连接Server端监听的地址和端口。
 
-#####2.客户端逻辑处理器ClientHandler
+##### 2.客户端逻辑处理器ClientHandler
 
 ```java
 package netty.client;

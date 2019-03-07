@@ -64,7 +64,7 @@ if (!Constants.SCOPE_LOCAL.equalsIgnoreCase(scope)) {
 Invoker<?> invoker = proxyFactory.getInvoker(ref, (Class) interfaceClass, registryURL.addParameterAndEncoded(Constants.EXPORT_KEY, url.toFullString()));
 ```
 
-###1.为registryURL拼接export=providerUrl参数
+### 1.为registryURL拼接export=providerUrl参数
 
 一开始的`registryURL`为
 
@@ -84,7 +84,7 @@ export=dubbo://172.16.132.166:20881/com.alibaba.dubbo.demo.DemoService?anyhost=t
 registry://localhost:2181/com.alibaba.dubbo.registry.RegistryService?application=demo-provider&cellinvokemode=sharing&client=zkclient&dubbo=2.0.0&export=dubbo://172.16.132.166:20881/com.alibaba.dubbo.demo.DemoService?anyhost=true&application=demo-provider&bind.ip=172.16.132.166&bind.port=20881&cellinvokemode=sharing&dubbo=2.0.0&generic=false&interface=com.alibaba.dubbo.demo.DemoService&methods=sayHello&pid=78143&side=provider&timestamp=1550368210931&group=dubbo_test&pid=78143&registry=zookeeper&timestamp=1550368210890
 ```
 
-###2.ProxyFactory$Adaptive.getInvoker(DemoServiceImpl2实例, Class`<DemoService>`, registryURL)
+### 2.ProxyFactory$Adaptive.getInvoker(DemoServiceImpl2实例, Class`<DemoService>`, registryURL)
 
 ```java
 public com.alibaba.dubbo.rpc.Invoker getInvoker(java.lang.Object arg0, java.lang.Class arg1, com.alibaba.dubbo.common.URL arg2) throws com.alibaba.dubbo.rpc.RpcException {
@@ -101,7 +101,7 @@ public com.alibaba.dubbo.rpc.Invoker getInvoker(java.lang.Object arg0, java.lang
 
 这里本来是调用`JavassistProxyFactory`的`getInvoker`方法，但是`JavassistProxyFactory`被`StubProxyFactoryWrapper AOP`，因此`ProxyFactory$Adaptive.getInvoker`的调用首先调用的是`StubProxyFactoryWrapper.getInvoker`方法。
 
-###3.StubProxyFactoryWrapper.getInvoker(DemoServiceImpl2实例, Class`<DemoService>`, registryURL)
+### 3.StubProxyFactoryWrapper.getInvoker(DemoServiceImpl2实例, Class`<DemoService>`, registryURL)
 
 ```java
 @Override
@@ -111,7 +111,7 @@ public <T> Invoker<T> getInvoker(T proxy, Class<T> type, URL url) throws RpcExce
 }
 ```
 
-###4.JavassistProxyFactory.getInvoker(DemoServiceImpl2实例, Class`<DemoService>`, registryURL)
+### 4.JavassistProxyFactory.getInvoker(DemoServiceImpl2实例, Class`<DemoService>`, registryURL)
 
 ```java
 // 将具体服务实现类实例转为Invoker
@@ -272,7 +272,7 @@ public Result invoke(Invocation invocation) throws RpcException {
 
 这里的`proxy`就是上边赋好值的`proxy：DemoServiceImpl2`实例。而消费者调用的方法信息会封装在`Invocation`对象中，该对象在服务引用时介绍。
 
-##二、将Invoker转换为Exporter
+## 二、将Invoker转换为Exporter
 
 ```java
 DelegateProviderMetaDataInvoker wrapperInvoker = new DelegateProviderMetaDataInvoker(invoker, this);
@@ -281,7 +281,7 @@ Exporter<?> exporter = protocol.export(wrapperInvoker);
 
 首先将`AbstractProxyInvoker`实例包装成`DelegateProviderMetaDataInvoker`实例，再导出该实例。
 
-###1.Protocol$Adaptive.export(DelegateProviderMetaDataInvoker实例)
+### 1.Protocol$Adaptive.export(DelegateProviderMetaDataInvoker实例)
 
 ```java
 public com.alibaba.dubbo.rpc.Exporter export(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.RpcException {
@@ -413,7 +413,7 @@ public <T> Exporter<T> export(final Invoker<T> originInvoker) throws RpcExceptio
 - 订阅与通知
 - 返回新的`Exporter`实例
 
-###2.将Invoker转换为Exporter并启动Netty服务
+### 2.将Invoker转换为Exporter并启动Netty服务
 
 ```java
 final ExporterChangeableWrapper<T> exporter = doLocalExport(originInvoker);
@@ -485,7 +485,7 @@ private URL getProviderUrl(final Invoker<?> originInvoker) {
 
 之后一系列的操作，就是获取该`providerUrl key`对应的`exporter`，之后放入缓存`Map<String, ExporterChangeableWrapper<?>> bounds`中，所以一个`providerUrl`只会对应一个`exporter`。
 
-####2.2 创建InvokerDelegete
+#### 2.2 创建InvokerDelegete
 
 ```java
 final Invoker<?> invokerDelegete = new InvokerDelegete<T>(originInvoker, getProviderUrl(originInvoker));
@@ -568,13 +568,13 @@ public class InvokerWrapper<T> implements Invoker<T> {
 - InvokerWrapper.invoker：`originInvoker(DelegateProviderMetaDataInvoker类型(包装AbstractProxyInvoker实例))`
 - url：`providerUrl(dubbo://172.16.132.166:20881/com.alibaba.dubbo.demo.DemoService?anyhost=true&application=demo-provider&bind.ip=172.16.132.166&bind.port=20881&cellinvokemode=sharing&dubbo=2.0.0&generic=false&interface=com.alibaba.dubbo.demo.DemoService&methods=sayHello&pid=79559&side=provider&timestamp=1550379785219)`
 
-####2.3 使用DubboProtocol将InvokerDelegete转换为Exporter
+#### 2.3 使用DubboProtocol将InvokerDelegete转换为Exporter
 
 ```java
 exporter = new ExporterChangeableWrapper<T>((Exporter<T>) protocol.export(invokerDelegete), originInvoker);
 ```
 
-#####2.3.1 Protocol$Adaptive.export(com.alibaba.dubbo.rpc.Invoker InvokerDelegete实例)
+##### 2.3.1 Protocol$Adaptive.export(com.alibaba.dubbo.rpc.Invoker InvokerDelegete实例)
 
 ```java
 public com.alibaba.dubbo.rpc.Exporter export(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.RpcException {
@@ -732,7 +732,7 @@ public <T> Exporter<T> export(Invoker<T> invoker) throws RpcException {
 
 首先从“**InvokerDelegete的Filter对象**”中的`url`获取`key`，即获取`serviceGroup/serviceName:serviceVersion:port`这样形式的一个`key`，最后获取到的是`com.alibaba.dubbo.demo.DemoService:20881`。之后创建`DubboExporter`。
 
-######2.3.2.1 new DubboExporter`<T>`(InvokerDelegete的Filter对象, "com.alibaba.dubbo.demo.DemoService:20881", exporterMap)
+###### 2.3.2.1 new DubboExporter`<T>`(InvokerDelegete的Filter对象, "com.alibaba.dubbo.demo.DemoService:20881", exporterMap)
 
 ```java
 public class DubboExporter<T> extends AbstractExporter<T> {
@@ -814,7 +814,7 @@ public abstract class AbstractExporter<T> implements Exporter<T> {
 - invoker：“`InvokerDelegete的Filter对象`”
 - exporterMap：`{ "com.alibaba.dubbo.demo.DemoService:20881" -> 当前的DubboExporter实例 }`
 
-######2.3.2.2 开启ExchangeServer
+###### 2.3.2.2 开启ExchangeServer
 
 ```java
 // 从缓存Map<String, ExchangeServer> serverMap中根据"host:port"获取ExchangeServer，如果没有，创建ExchangeServer，之后放入缓存。
@@ -1755,7 +1755,7 @@ final class HeartBeatTask implements Runnable {
 
 最后，`DubboProtocol.export(Invoker<T> invoker)`将之前创建的`DubboExporter`实例返回。
 
-####2.4 创建RegistryProtocol.ExporterChangeableWrapper来封装Exporter和originInvoker
+#### 2.4 创建RegistryProtocol.ExporterChangeableWrapper来封装Exporter和originInvoker
 
 ```java
 exporter = new ExporterChangeableWrapper<T>((Exporter<T>) protocol.export(invokerDelegete), originInvoker);
