@@ -234,6 +234,7 @@ close
 
 zk可以通过自身提供的简写命令与服务器进行交互。
 
+```text
 echo [command] | nc ip port
 
 - echo stat | nc localhost 2181 查看zk的状态信息，以及mode(单例或集群)
@@ -246,6 +247,7 @@ echo [command] | nc ip port
 - echo wchs  | nc localhost 2181 展示watch的信息
 - echo wchc  | nc localhost 2181 展示session与watch信息
 - echo wchp  | nc localhost 2181 展示path与watch信息
+```
 
 参考：
 
