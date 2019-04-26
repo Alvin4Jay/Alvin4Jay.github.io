@@ -92,7 +92,7 @@ Creating bean BeanC
 
 这个例子中三个`bean`都被创建了，并且`BeanB`和`BeanC`没有被注入到`BeanA`中，因为没有在`BeanA`的定义中使用`property ref`属性。
 
-#####(b)定义 bean tags和property ref属性
+##### (b)定义 bean tags和property ref属性
 
 ```xml
 <bean class="com.wacai.middleware.annotationconfiguration.config.BeanA" id="beanA">
@@ -112,7 +112,7 @@ Setting bean reference to BeanC
 
 这个例子中三个`bean`都被创建了，并且`BeanB`和`BeanC`被注入到了`BeanA`中。
 
-##### (c)只使用<context:annotation-config />
+##### (c)只使用`<context:annotation-config />`
 
 ```xml
 <context:annotation-config/>
@@ -121,7 +121,7 @@ Setting bean reference to BeanC
 
 `<context:annotation-config />` 只会发现和激活已经注册到应用上下文中的`bean`中的注解，在这里我们未找到任何注册的`bean`。
 
-##### (d)使用<context:annotation-config />和bean定义
+##### (d)使用`<context:annotation-config />`和bean定义
 
 ```xml
 <context:annotation-config/>
@@ -139,7 +139,7 @@ Setting bean reference to BeanC
 
 上面的例子使用`<bean/>`元素注册`bean`到应用上下文，因此`<context:annotation-config/>`能发现注册的`bean`，并激活`@Autowired`注解，注入依赖到`BeanA`。
 
-##### (e)只使用<context:component-scan />
+##### (e)只使用`<context:component-scan />`
 
 ```xml
 <context:component-scan base-package="com.wacai.middleware.annotationconfiguration.config"/>
@@ -154,7 +154,7 @@ Setting bean reference to BeanC
 
 `<context:component-scan />`扫描包并注册带有`@Component`注解的`bean`到应用上下文，并激活`bean`上的注解，如`@Autowired`。
 
-##### (f)使用<context:annotation-config />和<context:component-scan />
+##### (f)使用`<context:annotation-config />`和`<context:component-scan />`
 
 ```xml
 <context:annotation-config/>
