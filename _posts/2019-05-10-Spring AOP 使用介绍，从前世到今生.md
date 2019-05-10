@@ -10,6 +10,8 @@ tags:
     - Spring
 ---
 
+**转自[javadoop](https://www.javadoop.com/post/spring-aop-intro#toc0)**
+
 前面写过 Spring IOC 的源码分析，很多读者希望可以出一个 Spring AOP 的源码分析，不过 Spring AOP 的源码还是比较多的，写出来不免篇幅会大些。
 
 本文不介绍源码分析，而是介绍 Spring AOP 中的一些概念，以及它的各种配置方法，涵盖了 Spring AOP 发展到现在出现的全部 3 种配置方式。
