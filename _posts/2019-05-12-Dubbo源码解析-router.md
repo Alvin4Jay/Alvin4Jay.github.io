@@ -13,7 +13,7 @@ tags:
 
 # Dubbo源码分析-router
 
-<font color=red>**转自[肥朝](https://www.jianshu.com/p/278e782eef85)**，个人觉得Dubbo router过程分析得很清楚。</font>
+**转自[肥朝](https://www.jianshu.com/p/278e782eef85)**，个人觉得Dubbo router过程分析得很清楚。
 
 ### 前言
 
