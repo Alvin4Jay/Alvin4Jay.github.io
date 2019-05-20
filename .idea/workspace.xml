@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path=".idea/Alvin4Jay.github.io.iml" />
@@ -1978,7 +1977,29 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-05-20-ThreadLocalRandom原理剖析.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-05-13-TreeMap源码分析.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor>
+                <caret selection-end-line="11" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -2006,7 +2027,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2019-03-03-Dubbo 服务引用之构建客户端总体流程.md" />
         <option value="$PROJECT_DIR$/_posts/2019-03-03-Dubbo 服务暴露之服务暴露前的准备——ServiceBean的装配(dubbo 2.5.8).md" />
         <option value="$PROJECT_DIR$/_posts/2019-03-03-Dubbo 服务暴露之服务远程暴露——订阅与通知机制.md" />
         <option value="$PROJECT_DIR$/_posts/2019-03-03-Dubbo 服务暴露总结.md" />
@@ -2057,6 +2077,7 @@
         <option value="$PROJECT_DIR$/_posts/2019-05-12-Dubbo源码解析-router.md" />
         <option value="$PROJECT_DIR$/_posts/2019-05-13-TreeMap源码分析.md" />
         <option value="$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-05-20-ThreadLocalRandom原理剖析.md" />
       </list>
     </option>
   </component>
@@ -2072,7 +2093,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="813" />
@@ -2085,7 +2106,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2103,18 +2124,23 @@
               <item name="Alvin4Jay.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Alvin4Jay.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Alvin4Jay.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558352543169" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558354757256" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/_posts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -2254,13 +2280,7 @@
       <workItem from="1557633602766" duration="104000" />
       <workItem from="1557633923136" duration="68000" />
       <workItem from="1557705783357" duration="248000" />
-    </task>
-    <task id="LOCAL-00009" summary="add content">
-      <created>1551959334582</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1551959334583</updated>
+      <workItem from="1558352429145" duration="417000" />
     </task>
     <task id="LOCAL-00010" summary="design pattern">
       <created>1552025341975</created>
@@ -2598,14 +2618,22 @@
       <option name="project" value="LOCAL" />
       <updated>1557706014675</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="add 2019-05-20-ThreadLocalRandom原理剖析.md">
+      <created>1558352602603</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1558352602604</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14609000" />
+    <option name="totallyTimeSpent" value="15026000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="813" extended-state="0" />
+    <frame x="2" y="23" width="1440" height="813" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
@@ -2613,7 +2641,7 @@
       <window_info id="Image Layers" order="3" />
       <window_info id="Web" order="4" side_tool="true" weight="0.3297568" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.2532189" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.8606322" />
@@ -2627,7 +2655,7 @@
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49499285" weight="0.3204023" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.49499285" visible="true" weight="0.3204023" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
       <window_info anchor="bottom" id="Run with VisualVM" order="15" />
       <window_info anchor="bottom" id="Docker" order="16" />
@@ -2741,7 +2769,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="update 2019-03-07-Dubbo 源码分析目录.md" />
     <MESSAGE value="add JCF源码阅读目录" />
     <MESSAGE value="add 设计模式总结" />
     <MESSAGE value="add 2019-03-18-Dubbo 异步调用原理分析.md" />
@@ -2766,20 +2793,11 @@
     <MESSAGE value="add 2019-05-12-Dubbo源码解析-router.md" />
     <MESSAGE value="add TreeMap分析" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="add 2019-05-20-ThreadLocalRandom原理剖析.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 2019-05-20-ThreadLocalRandom原理剖析.md" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2019-01-06-AQS源码分析2——共享锁的获取与释放.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="108">
-            <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="36" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-01-31-ReentrantReadWriteLock源码分析.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -3236,24 +3254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-05-13-TreeMap源码分析.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="11970">
-            <caret line="665" column="3" selection-start-line="665" selection-start-column="3" selection-end-line="665" selection-end-column="3" />
-            <folding>
-              <element signature="e#283#313#1" expanded="true" />
-              <element signature="e#86#116#1" expanded="true" />
-              <element signature="e#905#935#1" expanded="true" />
-              <element signature="e#0#520#0" expanded="true" />
-              <element signature="e#0#309#0" expanded="true" />
-              <element signature="e#0#2775#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-03-31-HashMap源码解析.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -3271,6 +3271,23 @@
             <caret selection-end-line="11" selection-end-column="3" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-05-13-TreeMap源码分析.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor>
+            <caret selection-end-line="11" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-05-20-ThreadLocalRandom原理剖析.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
     </entry>

@@ -8,6 +8,7 @@ header-img: img/post-bg-hacker.jpg
 catalog: true
 tags:
     - Java基础
+    - JUC
 ---
 
 # ThreadLocalRandom原理剖析
