@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md" afterDir="false" />
     </list>
     <ignored path=".idea/Alvin4Jay.github.io.iml" />
     <ignored path=".idea/encodings.xml" />
@@ -1977,7 +1978,20 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="265">
+                <caret line="39" column="152" selection-start-line="39" selection-start-column="152" selection-end-line="39" selection-end-column="152" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -2005,7 +2019,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2019-03-03-Dubbo 服务暴露之服务远程暴露——订阅与通知机制.md" />
         <option value="$PROJECT_DIR$/_posts/2019-03-03-Dubbo 服务暴露总结.md" />
         <option value="$PROJECT_DIR$/_posts/2019-03-03-Dubbo 服务暴露之Netty3使用实例.md" />
         <option value="$PROJECT_DIR$/_posts/2019-03-03-Dubbo 服务暴露之服务本地暴露.md" />
@@ -2055,6 +2068,7 @@
         <option value="$PROJECT_DIR$/_posts/2019-05-13-TreeMap源码分析.md" />
         <option value="$PROJECT_DIR$/_posts/2019-05-20-ThreadLocalRandom原理剖析.md" />
         <option value="$PROJECT_DIR$/_posts/2019-05-22-ConcurrentHashMap源码分析(JDK7).md" />
+        <option value="$PROJECT_DIR$/_posts/2019-05-24-ConcurrentHashMap源码分析(JDK8).md" />
         <option value="$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md" />
       </list>
     </option>
@@ -2118,7 +2132,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558533589855" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558788977117" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/_posts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -2132,13 +2146,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/_posts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/_posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2261,14 +2275,7 @@
       <workItem from="1558352429145" duration="461000" />
       <workItem from="1558453701043" duration="555000" />
       <workItem from="1558533328875" duration="309000" />
-      <workItem from="1558788158177" duration="598000" />
-    </task>
-    <task id="LOCAL-00013" summary="Java线程池分析">
-      <created>1552056252006</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1552056252006</updated>
+      <workItem from="1558788158177" duration="873000" />
     </task>
     <task id="LOCAL-00014" summary="add ScheduledThreadPoolExecutor实现分析.md">
       <created>1552148537042</created>
@@ -2606,11 +2613,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558533588626</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="addd ConcurrentHashMap源码分析(基于JDK8)">
+      <created>1558788953312</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1558788953312</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16532000" />
+    <option name="totallyTimeSpent" value="16807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
@@ -2621,7 +2635,7 @@
       <window_info id="Image Layers" order="3" />
       <window_info id="Web" order="4" side_tool="true" weight="0.3297568" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.2639485" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.8606322" />
@@ -2635,7 +2649,7 @@
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.49499285" visible="true" weight="0.3204023" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49499285" visible="true" weight="0.3204023" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
       <window_info anchor="bottom" id="Run with VisualVM" order="15" />
       <window_info anchor="bottom" id="Docker" order="16" />
@@ -2749,7 +2763,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add 设计模式总结" />
     <MESSAGE value="add 2019-03-18-Dubbo 异步调用原理分析.md" />
     <MESSAGE value="add 2019-03-18-Dubbo 事件通知机制分析.md" />
     <MESSAGE value="update dubbo源码目录" />
@@ -2774,20 +2787,11 @@
     <MESSAGE value="add 2019-05-20-ThreadLocalRandom原理剖析.md" />
     <MESSAGE value="add ConcurrentHashMap源码分析(JDK7)" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="addd ConcurrentHashMap源码分析(基于JDK8)" />
+    <option name="LAST_COMMIT_MESSAGE" value="addd ConcurrentHashMap源码分析(基于JDK8)" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2019-03-09-ScheduledThreadPoolExecutor实现分析.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="12937">
-            <caret line="735" column="3" selection-start-line="735" selection-start-column="3" selection-end-line="735" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-03-08-线程池ThreadPoolExecutor实现分析.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -3261,8 +3265,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-22-ConcurrentHashMap源码分析(JDK7).md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="234">
-            <caret line="13" column="1" selection-start-line="13" selection-end-line="13" selection-end-column="1" />
+          <first_editor relative-caret-position="198">
+            <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
             <folding>
               <element signature="e#0#387#0" expanded="true" />
               <element signature="e#0#1260#0" expanded="true" />
@@ -3273,11 +3277,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2019-05-24-ConcurrentHashMap源码分析(JDK8).md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="175">
-            <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+            <caret line="1268" column="3" selection-start-line="1268" selection-start-column="3" selection-end-line="1268" selection-end-column="3" />
+            <folding>
+              <element signature="e#675#705#1" expanded="true" />
+              <element signature="e#743#773#1" expanded="true" />
+              <element signature="e#0#2439#0" expanded="true" />
+              <element signature="e#535#565#1" expanded="true" />
+              <element signature="e#66#96#1" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="265">
+            <caret line="39" column="152" selection-start-line="39" selection-start-column="152" selection-end-line="39" selection-end-column="152" />
           </first_editor>
           <second_editor />
         </state>
