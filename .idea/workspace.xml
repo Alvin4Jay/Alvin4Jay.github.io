@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/2019-06-02-CopyOnWriteArrayList源码分析.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/2019-06-09-LinkedBlockingQueue源码分析.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md" afterDir="false" />
     </list>
     <ignored path=".idea/Alvin4Jay.github.io.iml" />
     <ignored path=".idea/encodings.xml" />
@@ -1983,8 +1984,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor>
-                <caret selection-end-line="11" selection-end-column="3" />
+              <first_editor relative-caret-position="396">
+                <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
               </first_editor>
               <second_editor />
             </state>
@@ -1992,11 +1993,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-06-02-CopyOnWriteArrayList源码分析.md">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-06-09-LinkedBlockingQueue源码分析.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="612">
-                <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+              <first_editor relative-caret-position="-207">
+                <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-06-09-ArrayBlockingQueue源码分析.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor>
+                <caret selection-end-line="11" selection-end-column="3" />
+                <folding>
+                  <element signature="e#674#704#1" expanded="true" />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
@@ -2014,8 +2030,8 @@
       <find>nc</find>
       <find>Theme on</find>
       <find>site.github_username</find>
-      <find>#</find>
       <find>##</find>
+      <find>#</find>
     </findStrings>
     <replaceStrings>
       <replace>https://www.javadoop.com/blogimages</replace>
@@ -2031,8 +2047,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2019-03-03-Dubbo 服务暴露之服务本地暴露.md" />
-        <option value="$PROJECT_DIR$/_posts/2019-03-03-Dubbo 服务暴露之服务远程暴露——创建Exporter与启动Netty服务端.md" />
         <option value="$PROJECT_DIR$/_posts/2019-03-03-Dubbo 服务暴露之服务远程暴露——注册服务到Zookeeper.md" />
         <option value="$PROJECT_DIR$/_posts/2019-03-03-Dubbo 服务引用之构建客户端源码解析.md" />
         <option value="$PROJECT_DIR$/_posts/Dubbo 源码分析目录.md" />
@@ -2079,9 +2093,11 @@
         <option value="$PROJECT_DIR$/_posts/2019-05-20-ThreadLocalRandom原理剖析.md" />
         <option value="$PROJECT_DIR$/_posts/2019-05-22-ConcurrentHashMap源码分析(JDK7).md" />
         <option value="$PROJECT_DIR$/_posts/2019-05-24-ConcurrentHashMap源码分析(JDK8).md" />
-        <option value="$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md" />
         <option value="$PROJECT_DIR$/_posts/CopyOnWriteArrayList源码分析.md" />
         <option value="$PROJECT_DIR$/_posts/2019-06-02-CopyOnWriteArrayList源码分析.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-06-09-ArrayBlockingQueue源码分析.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-06-09-LinkedBlockingQueue源码分析.md" />
       </list>
     </option>
   </component>
@@ -2110,6 +2126,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -2137,7 +2154,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2158,13 +2174,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/_posts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/_posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2288,28 +2304,8 @@
       <workItem from="1558453701043" duration="555000" />
       <workItem from="1558533328875" duration="309000" />
       <workItem from="1558788158177" duration="895000" />
-      <workItem from="1559455668803" duration="357000" />
-    </task>
-    <task id="LOCAL-00015" summary="update">
-      <created>1552180218316</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1552180218316</updated>
-    </task>
-    <task id="LOCAL-00016" summary="add 2019-03-11-Dubbo 客户端发起请求过程分析.md">
-      <created>1552312849373</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1552312849373</updated>
-    </task>
-    <task id="LOCAL-00017" summary="add 2019-03-11-Dubbo 服务端接收请求并发送响应流程分析.md">
-      <created>1552312937067</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1552312937067</updated>
+      <workItem from="1559455668803" duration="458000" />
+      <workItem from="1560045926854" duration="306000" />
     </task>
     <task id="LOCAL-00018" summary="add 2019-03-11-Dubbo 客户端接收响应流程分析(异步转同步实现).md">
       <created>1552313010147</created>
@@ -2633,14 +2629,35 @@
       <option name="project" value="LOCAL" />
       <updated>1558789088617</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="add 2019-06-02-CopyOnWriteArrayList源码分析.md">
+      <created>1559456042426</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1559456042427</updated>
+    </task>
+    <task id="LOCAL-00065" summary="update 2019-03-17-JCF源码阅读目录.md">
+      <created>1559456124188</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1559456124188</updated>
+    </task>
+    <task id="LOCAL-00066" summary="add 2019-06-09-ArrayBlockingQueue源码分析.md">
+      <created>1560046031507</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1560046031508</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17186000" />
+    <option name="totallyTimeSpent" value="17593000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="813" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="813" extended-state="0" />
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
@@ -2648,7 +2665,7 @@
       <window_info id="Image Layers" order="3" />
       <window_info id="Web" order="4" side_tool="true" weight="0.3297568" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.26752505" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.27110156" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.8606322" />
@@ -2776,9 +2793,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add 2019-03-18-Dubbo 异步调用原理分析.md" />
-    <MESSAGE value="add 2019-03-18-Dubbo 事件通知机制分析.md" />
-    <MESSAGE value="update dubbo源码目录" />
     <MESSAGE value="add 2019-03-18-Java开发日常工具汇总.md" />
     <MESSAGE value="Dubbo 心跳机制" />
     <MESSAGE value="update dubbo content" />
@@ -2801,33 +2815,13 @@
     <MESSAGE value="add ConcurrentHashMap源码分析(JDK7)" />
     <MESSAGE value="update" />
     <MESSAGE value="addd ConcurrentHashMap源码分析(基于JDK8)" />
-    <option name="LAST_COMMIT_MESSAGE" value="addd ConcurrentHashMap源码分析(基于JDK8)" />
+    <MESSAGE value="add 2019-06-02-CopyOnWriteArrayList源码分析.md" />
+    <MESSAGE value="update 2019-03-17-JCF源码阅读目录.md" />
+    <MESSAGE value="add 2019-06-09-ArrayBlockingQueue源码分析.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 2019-06-09-ArrayBlockingQueue源码分析.md" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2019-03-03-Dubbo 服务引用之构建客户端源码解析.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="320">
-            <caret line="1051" column="10" selection-start-line="1051" selection-start-column="10" selection-end-line="1051" selection-end-column="10" />
-            <folding>
-              <element signature="e#188#189#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-03-03-Dubbo 服务暴露之服务远程暴露——订阅与通知机制.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor>
-            <caret selection-end-line="11" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-03-11-Dubbo 服务端接收请求并发送响应流程分析.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -3261,21 +3255,44 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-20-ThreadLocalRandom原理剖析.md" />
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-22-ConcurrentHashMap源码分析(JDK7).md" />
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-24-ConcurrentHashMap源码分析(JDK8).md" />
-    <entry file="file://$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor>
-            <caret selection-end-line="11" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-06-02-CopyOnWriteArrayList源码分析.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="612">
             <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="396">
+            <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-06-09-ArrayBlockingQueue源码分析.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor>
+            <caret selection-end-line="11" selection-end-column="3" />
+            <folding>
+              <element signature="e#674#704#1" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-06-09-LinkedBlockingQueue源码分析.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-207">
+            <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>
