@@ -325,3 +325,5 @@ public E take() throws InterruptedException {
 - [【Java并发编程】—–“J.U.C”：ArrayBlockingQueue](https://www.jianshu.com/p/9a652250e0d1)
 - [Java阻塞队列ArrayBlockingQueue和LinkedBlockingQueue实现原理分析](http://www.importnew.com/24055.html)
 - [JDK1.8 ArrayBlockingQueue源码分析](https://blog.csdn.net/qq_22929803/article/details/52347071)
+- [深入Java并发之阻塞队列-迭代器（一）](http://www.manongjc.com/article/63920.html)
+- [深入Java并发之阻塞队列-迭代器（二）](http://www.ishenping.com/ArtInfo/274420.html)
