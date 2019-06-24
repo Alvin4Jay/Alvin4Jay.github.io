@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/2019-06-24-LinkedTransferQueue源码分析.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-06-23-SynchronousQueue源码分析.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-06-23-SynchronousQueue源码分析.md" afterDir="false" />
-    </list>
+    <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +18,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="308">
-                <caret line="29" column="26" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="26" />
+                <caret line="29" column="160" selection-start-line="29" selection-start-column="160" selection-end-line="29" selection-end-column="160" />
               </first_editor>
               <second_editor />
             </state>
@@ -87,9 +82,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md" />
         <option value="$PROJECT_DIR$/_posts/2019-06-23-SynchronousQueue源码分析.md" />
         <option value="$PROJECT_DIR$/_posts/2019-06-24-LinkedTransferQueue源码分析.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md" />
       </list>
     </option>
   </component>
@@ -296,14 +291,7 @@
       <workItem from="1560666521427" duration="13000" />
       <workItem from="1560675034901" duration="435000" />
       <workItem from="1561303770955" duration="237000" />
-      <workItem from="1561381963552" duration="242000" />
-    </task>
-    <task id="LOCAL-00024" summary="update dubbo源码目录">
-      <created>1552917531845</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1552917531845</updated>
+      <workItem from="1561381963552" duration="355000" />
     </task>
     <task id="LOCAL-00025" summary="add 2019-03-18-Java开发日常工具汇总.md">
       <created>1552921474560</created>
@@ -641,14 +629,22 @@
       <option name="project" value="LOCAL" />
       <updated>1561382205311</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="update..">
+      <created>1561382326800</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1561382326800</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="479000" />
+    <option name="totallyTimeSpent" value="592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="508" y="397" width="1440" height="813" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
@@ -666,11 +662,11 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293944" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3293944" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.5096012" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32791728" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.3275862" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" visible="true" weight="0.32902297" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.49928468" visible="true" weight="0.3275862" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
       <window_info anchor="bottom" id="Docker" order="15" />
       <window_info anchor="bottom" id="Tail" order="16" />
@@ -688,6 +684,45 @@
       <window_info anchor="right" id="Maven" order="11" />
       <window_info anchor="right" id="Cargo" order="12" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Capture Tool" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Web" order="4" side_tool="true" weight="0.3297568" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.24964234" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293944" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8611521" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3293944" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3293944" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5096012" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.3275862" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49928468" visible="true" weight="0.3275862" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
+      <window_info anchor="bottom" id="Docker" order="15" />
+      <window_info anchor="bottom" id="Tail" order="16" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Structure" order="1" sideWeight="0.50073856" side_tool="true" weight="0.22103004" />
+      <window_info anchor="right" id="Maven Projects" order="2" sideWeight="0.49778435" weight="0.22246066" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Bean Validation" order="6" sideWeight="0.49926144" weight="0.3297568" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.24964234" />
+      <window_info anchor="right" id="Maven" order="11" />
+      <window_info anchor="right" id="Cargo" order="12" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -728,7 +763,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Dubbo 心跳机制" />
     <MESSAGE value="update dubbo content" />
     <MESSAGE value="add 2019-03-31-Dubbo 线程模型.md" />
     <MESSAGE value="add 2019-03-31-HashMap源码解析.md" />
@@ -753,7 +787,8 @@
     <MESSAGE value="add 2019-06-09-LinkedBlockingQueue源码分析.md" />
     <MESSAGE value="add" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update.." />
+    <option name="LAST_COMMIT_MESSAGE" value="update.." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -819,7 +854,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="308">
-            <caret line="29" column="26" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="26" />
+            <caret line="29" column="160" selection-start-line="29" selection-start-column="160" selection-end-line="29" selection-end-column="160" />
           </first_editor>
           <second_editor />
         </state>
