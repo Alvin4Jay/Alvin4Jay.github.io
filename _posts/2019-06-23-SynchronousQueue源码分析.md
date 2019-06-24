@@ -2,7 +2,7 @@
 layout:     post
 title:      SynchronousQueue源码分析
 subtitle:   BlockingQueue
-date:       2019-06-23r
+date:       2019-06-23
 author:     Jay
 header-img: img/post-bg-hacker.jpg
 catalog: true
