@@ -47,6 +47,7 @@
         <option value="$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md" />
         <option value="$PROJECT_DIR$/_posts/2019-06-25-DelayQueue源码分析.md" />
         <option value="$PROJECT_DIR$/_posts/2019-06-26-系统运行缓慢，CPU 100%，以及Full GC次数过多问题的排查思路.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-06-27-String类问题答疑.md" />
       </list>
     </option>
   </component>
@@ -62,11 +63,6 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="2560" />
-    <option name="height" value="1351" />
-  </component>
   <component name="ProjectId" id="1MiTfMND3p1WpW4b71hal66BIq4" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -76,6 +72,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -93,15 +90,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MANAGE_IGNORE_FILES" value="true" />
+    <property name="MANAGE_IGNORE_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561518500210" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_posts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -114,13 +112,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/_posts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/_posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -257,13 +255,7 @@
       <workItem from="1561477089438" duration="380000" />
       <workItem from="1561516978712" duration="935000" />
       <workItem from="1561518447677" duration="58000" />
-    </task>
-    <task id="LOCAL-00030" summary="add 2019-03-31-Dubbo 线程模型.md">
-      <created>1554017621540</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1554017621540</updated>
+      <workItem from="1561646684735" duration="110000" />
     </task>
     <task id="LOCAL-00031" summary="add 2019-03-31-HashMap源码解析.md">
       <created>1554040244003</created>
@@ -601,14 +593,21 @@
       <option name="project" value="LOCAL" />
       <updated>1561518466151</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="add 2019-06-27-String类问题答疑.md">
+      <created>1561646784257</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1561646784257</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2055000" />
+    <option name="totallyTimeSpent" value="2165000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="813" extended-state="6" />
+    <frame x="0" y="23" width="2560" height="1351" extended-state="6" />
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
@@ -616,7 +615,7 @@
       <window_info id="Image Layers" order="3" />
       <window_info id="Web" order="4" side_tool="true" weight="0.3297568" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.20028612" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.20174742" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293944" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.8611521" />
@@ -630,7 +629,7 @@
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4985694" weight="0.3275862" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4985694" visible="true" weight="0.3273906" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
       <window_info anchor="bottom" id="Docker" order="15" />
       <window_info anchor="bottom" id="Tail" order="16" />
@@ -727,7 +726,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add 2019-03-31-Dubbo 线程模型.md" />
     <MESSAGE value="add 2019-03-31-HashMap源码解析.md" />
     <MESSAGE value="add 2019-04-01-Dubbo 通信框架Netty4.md" />
     <MESSAGE value="update 设计模式.md" />
@@ -752,7 +750,8 @@
     <MESSAGE value="add 2019-06-25-DelayQueue源码分析.md" />
     <MESSAGE value="add" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="add 2019-06-27-String类问题答疑.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 2019-06-27-String类问题答疑.md" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -819,12 +818,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-06-25-DelayQueue源码分析.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-11-18-Java SPI机制实现分析.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor>
-            <caret selection-end-line="12" />
-          </first_editor>
+        <state split_layout="SPLIT">
+          <first_editor />
           <second_editor />
         </state>
       </provider>
@@ -832,8 +829,28 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-06-26-系统运行缓慢，CPU 100%，以及Full GC次数过多问题的排查思路.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
+          <first_editor>
+            <caret selection-end-line="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-06-25-DelayQueue源码分析.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
           <first_editor relative-caret-position="162">
-            <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-06-27-String类问题答疑.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="162">
+            <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           </first_editor>
           <second_editor />
         </state>
