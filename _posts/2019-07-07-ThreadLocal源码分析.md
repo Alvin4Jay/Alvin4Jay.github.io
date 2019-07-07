@@ -549,7 +549,7 @@ try {
 - [Java进阶（七）正确理解Thread Local的原理与适用场景](http://www.jasongj.com/java/threadlocal/)
 - [ThreadLocal和synchronized的区别?](https://www.zhihu.com/question/23089780/answer/62097840)
 - [ThreadLocal的原理，源码深度分析及使用](https://www.cnblogs.com/barrywxx/p/10141169.html)
-- [并发编程 | ThreadLocal 源码深入分析](https://www.sczyh30.com/posts/Java/java-concurrent-threadlocal/)
+- [并发编程 ThreadLocal 源码深入分析](https://www.sczyh30.com/posts/Java/java-concurrent-threadlocal/)
 - [手撕面试题ThreadLocal！！！](https://mp.weixin.qq.com/s?__biz=MzU2NjIzNDk5NQ==&mid=2247486666&idx=1&sn=ee9d72b115411940940f00171986e0db&chksm=fcaed6d6cbd95fc08cf5525e7974efc7753f9f018f2a79fd5386b9f0132b90645394e85c3568&mpshare=1&scene=1&srcid=#rd)
 - [深入理解 ThreadLocal (这些细节不应忽略)](https://www.jianshu.com/p/56f64e3c1b6c)
 - [Java面试必问，深入理解 ThreadLocal 实现原理与内存泄露](https://mp.weixin.qq.com/s?__biz=MzA5NDg3MjAwMQ==&mid=2457103267&idx=1&sn=a18ca7db8af546684b8d4465917856d0&chksm=87c8c30db0bf4a1be1ea0ca40a63327d2294cebdef55def3c791ce653562f061f6bc297a1f68&mpshare=1&scene=1&srcid=#rd)
