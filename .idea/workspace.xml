@@ -13,42 +13,15 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>#######</find>
-      <find>这里继续包装`handler`</find>
-      <find>/blogimages</find>
-      <find>###</find>
-      <find>nc</find>
-      <find>Theme on</find>
-      <find>site.github_username</find>
-      <find>##</find>
-      <find>#</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>https://www.javadoop.com/blogimages</replace>
-      <replace>####</replace>
-      <replace>#####</replace>
-      <replace>###</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/_posts/2019-06-23-SynchronousQueue源码分析.md" />
-        <option value="$PROJECT_DIR$/_posts/2019-06-24-LinkedTransferQueue源码分析.md" />
-        <option value="$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md" />
-        <option value="$PROJECT_DIR$/_posts/2019-06-25-DelayQueue源码分析.md" />
-        <option value="$PROJECT_DIR$/_posts/2019-06-26-系统运行缓慢，CPU 100%，以及Full GC次数过多问题的排查思路.md" />
-        <option value="$PROJECT_DIR$/_posts/2019-06-27-String类问题答疑.md" />
-      </list>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$" />
+      </set>
     </option>
   </component>
   <component name="MacroExpansionManager">
@@ -66,31 +39,6 @@
   <component name="ProjectId" id="1MiTfMND3p1WpW4b71hal66BIq4" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Alvin4Jay.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Alvin4Jay.github.io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Alvin4Jay.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Alvin4Jay.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_MANAGE_IGNORE_FILES" value="true" />
@@ -256,27 +204,10 @@
       <workItem from="1561516978712" duration="935000" />
       <workItem from="1561518447677" duration="58000" />
       <workItem from="1561646684735" duration="110000" />
-    </task>
-    <task id="LOCAL-00031" summary="add 2019-03-31-HashMap源码解析.md">
-      <created>1554040244003</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1554040244004</updated>
-    </task>
-    <task id="LOCAL-00032" summary="update">
-      <created>1554040319108</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1554040319108</updated>
-    </task>
-    <task id="LOCAL-00033" summary="add 2019-04-01-Dubbo 通信框架Netty4.md">
-      <created>1554131062321</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1554131062321</updated>
+      <workItem from="1562165396304" duration="850000" />
+      <workItem from="1562487914416" duration="99000" />
+      <workItem from="1562505727297" duration="190000" />
+      <workItem from="1562506107165" duration="83000" />
     </task>
     <task id="LOCAL-00034" summary="update">
       <created>1554131212358</created>
@@ -600,92 +531,29 @@
       <option name="project" value="LOCAL" />
       <updated>1561646784257</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="add Thread笔记">
+      <created>1562165627357</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1562165627358</updated>
+    </task>
+    <task id="LOCAL-00081" summary="add">
+      <created>1562505897649</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1562505897649</updated>
+    </task>
+    <task id="LOCAL-00082" summary="update">
+      <created>1562506121848</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1562506121848</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2165000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1351" extended-state="6" />
-    <layout>
-      <window_info id="Capture Tool" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Web" order="4" side_tool="true" weight="0.3297568" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.20174742" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293944" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.8611521" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3293944" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.3293944" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5096012" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50143063" side_tool="true" weight="0.3275862" />
-      <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4985694" visible="true" weight="0.3273906" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
-      <window_info anchor="bottom" id="Docker" order="15" />
-      <window_info anchor="bottom" id="Tail" order="16" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Structure" order="1" sideWeight="0.50073856" side_tool="true" weight="0.22103004" />
-      <window_info anchor="right" id="Maven Projects" order="2" sideWeight="0.49778435" weight="0.22246066" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Bean Validation" order="6" sideWeight="0.49926144" weight="0.3297568" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.24964234" />
-      <window_info anchor="right" id="Maven" order="11" />
-      <window_info anchor="right" id="Cargo" order="12" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Capture Tool" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Web" order="4" side_tool="true" weight="0.3297568" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.24964234" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293944" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.8611521" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3293944" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.3293944" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5096012" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.3275862" />
-      <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49928468" visible="true" weight="0.3275862" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
-      <window_info anchor="bottom" id="Docker" order="15" />
-      <window_info anchor="bottom" id="Tail" order="16" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Structure" order="1" sideWeight="0.50073856" side_tool="true" weight="0.22103004" />
-      <window_info anchor="right" id="Maven Projects" order="2" sideWeight="0.49778435" weight="0.22246066" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Bean Validation" order="6" sideWeight="0.49926144" weight="0.3297568" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.24964234" />
-      <window_info anchor="right" id="Maven" order="11" />
-      <window_info anchor="right" id="Cargo" order="12" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -696,12 +564,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -726,7 +588,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add 2019-03-31-HashMap源码解析.md" />
     <MESSAGE value="add 2019-04-01-Dubbo 通信框架Netty4.md" />
     <MESSAGE value="update 设计模式.md" />
     <MESSAGE value="add 2019-04-10-LinkedHashMap源码分析.md" />
@@ -748,114 +609,12 @@
     <MESSAGE value="add 2019-06-09-LinkedBlockingQueue源码分析.md" />
     <MESSAGE value="update.." />
     <MESSAGE value="add 2019-06-25-DelayQueue源码分析.md" />
+    <MESSAGE value="add 2019-06-27-String类问题答疑.md" />
+    <MESSAGE value="add Thread笔记" />
     <MESSAGE value="add" />
     <MESSAGE value="update" />
-    <MESSAGE value="add 2019-06-27-String类问题答疑.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 2019-06-27-String类问题答疑.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2019-04-16-Dubbo 服务端请求解码.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <folding>
-              <element signature="e#0#912#0" expanded="true" />
-              <element signature="e#0#2376#0" expanded="true" />
-              <element signature="e#0#2163#0" expanded="true" />
-              <element signature="e#0#2044#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-03-31-Dubbo 线程模型.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-06-09-LinkedBlockingQueue源码分析.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-line="11" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-06-23-SynchronousQueue源码分析.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="72">
-            <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-06-24-LinkedTransferQueue源码分析.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="36">
-            <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-03-17-JCF源码阅读目录.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="326">
-            <caret line="30" column="124" selection-start-line="30" selection-start-column="124" selection-end-line="30" selection-end-column="124" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-11-18-Java SPI机制实现分析.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-06-26-系统运行缓慢，CPU 100%，以及Full GC次数过多问题的排查思路.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor>
-            <caret selection-end-line="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-06-25-DelayQueue源码分析.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="162">
-            <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-06-27-String类问题答疑.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="162">
-            <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
