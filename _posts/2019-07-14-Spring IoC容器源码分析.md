@@ -443,7 +443,7 @@ public interface BeanDefinition extends AttributeAccessor, BeanMetadataElement {
    // 如果根据名称注入，即使这边设置了 false，也是可以的
    void setAutowireCandidate(boolean autowireCandidate);
 
-   // 该 ean是否可以注入到其他Bean中
+   // 该Bean是否可以注入到其他Bean中
    boolean isAutowireCandidate();
 
    // 主要的。同一接口的多个实现，如果不指定名字的话，Spring会优先选择设置primary为true的bean
@@ -798,7 +798,7 @@ protected void parseBeanDefinitions(Element root, BeanDefinitionParserDelegate d
 
 从上面的代码可以看到，对于每个配置来说，会分别进入到parseDefaultElement(ele, delegate)和 delegate.parseCustomElement(ele)这两个分支。
 
-parseDefaultElement(ele, delegate) 代表解析的节点是 `<import />`、`<alias />`、`<bean />`、`<beans />` 这几个。下面处理default标签的方法：
+parseDefaultElement(ele, delegate) 代表解析的节点是 `<import />`、`<alias />`、`<bean />`、`<beans />` 这几个。下面分析处理default标签的方法：
 
 ```java
 // DefaultBeanDefinitionDocumentReader类
@@ -1247,22 +1247,19 @@ protected void prepareBeanFactory(ConfigurableListableBeanFactory beanFactory) {
    // 这个我们很常用，如我们会为了获取 ApplicationContext 而 implement ApplicationContextAware
    // 注意：它不仅仅回调 ApplicationContextAware，还会负责回调 EnvironmentAware、ResourceLoaderAware 等
    beanFactory.addBeanPostProcessor(new ApplicationContextAwareProcessor(this));
-   /*
-    * 取消
-    * EnvironmentAware,
-    * EmbeddedValueResolverAware,
-    * ResourceLoaderAware,
-    * ApplicationEventPublisherAware,
-    * MessageSourceAware,
-    * ApplicationContextAware这6个接口的自动注入。
-    * 因为ApplicatioinContextAwareProcessor把这6这个接口的实现工作做了
-    *
-    * 保存在beanFactory的ignoredDependencyInterfaces集合中
-    *
-    * ApplicatioinContextAwareProcessor的作用在于为实现*Aware接口的bean调用该Aware接口定义的方法，并传入对应的参数。
-    * 比如实现EnvironmentAware接口的bean在该Processor内部会调用EnvironmentAware接口的setEnvironment方法，
-    * 并把Spring容器内部的ConfigurationEnvironment传递进去。
-    */
+   // 取消
+   // nvironmentAware,
+   // eddedValueResolverAware,
+   // esourceLoaderAware,
+   // pplicationEventPublisherAware,
+   // essageSourceAware,
+   // pplicationContextAware这6个接口的自动注入。
+   // 为ApplicatioinContextAwareProcessor把这6这个接口的实现工作做了
+   //
+   // 存在beanFactory的ignoredDependencyInterfaces集合中
+   //
+   //ApplicatioinContextAwareProcessor的作用在于为实现*Aware接口的bean调用该Aware接口定义的方法，并传入对应的参数。
+   // 如实现EnvironmentAware接口的bean在该Processor内部会调用EnvironmentAware接口的setEnvironment方法，把Spring容器内部的ConfigurationEnvironment传递进去。
    beanFactory.ignoreDependencyInterface(EnvironmentAware.class);
    beanFactory.ignoreDependencyInterface(EmbeddedValueResolverAware.class);
    beanFactory.ignoreDependencyInterface(ResourceLoaderAware.class);
@@ -1586,25 +1583,21 @@ public static void registerBeanPostProcessors(
 	}
 
 	// First, register the BeanPostProcessors that implement PriorityOrdered.
-	/*
-	 * 注册实现了PriorityOrdered接口的BeanPostProcessors，
-	 * 当前主要有
-	 * AutowiredAnnotationBeanPostProcessor
-	 * RequiredAnnotationBeanPostProcessor
-	 * CommonAnnotationBeanPostProcessor
-	 */
+	// 注册实现了PriorityOrdered接口的BeanPostProcessors，
+	// 当前主要有
+	// AutowiredAnnotationBeanPostProcessor
+	// RequiredAnnotationBeanPostProcessor
+	// CommonAnnotationBeanPostProcessor
 	sortPostProcessors(priorityOrderedPostProcessors, beanFactory);
-	/*
-	 * 注册到beanFactory中。添加到List<BeanPostProcessor> beanPostProcessors中。
-	 * 当前beanPostProcessors中有：
-	 * ApplicationContextAwareProcessor
-	 * ApplicationListenerDetector
-	 * ImportAwareBeanPostProcessor
-	 * BeanPostProcessorChecker
-	 * CommonAnnotationBeanPostProcessor
-	 * AutowiredAnnotationBeanPostProcessor
-	 * RequiredAnnotationBeanPostProcessor
-	 */
+	// 注册到beanFactory中。添加到List<BeanPostProcessor> beanPostProcessors中。
+	// 当前beanPostProcessors中有：
+	// ApplicationContextAwareProcessor
+	// ApplicationListenerDetector
+	// ImportAwareBeanPostProcessor
+	// BeanPostProcessorChecker
+	// CommonAnnotationBeanPostProcessor
+	// AutowiredAnnotationBeanPostProcessor
+	// RequiredAnnotationBeanPostProcessor
 	registerBeanPostProcessors(beanFactory, priorityOrderedPostProcessors); // 注册实现了PriorityOrdered接口的BeanPostProcessor
 
 	// Next, register the BeanPostProcessors that implement Ordered.
@@ -1628,18 +1621,16 @@ public static void registerBeanPostProcessors(
 			internalPostProcessors.add(pp);
 		}
 	}
-	/*
-	 * 注册到beanFactory中。添加到List<BeanPostProcessor> beanPostProcessors中。
-	 * 当前beanPostProcessors中有：
-	 * ApplicationContextAwareProcessor
-	 * ApplicationListenerDetector
-	 * ImportAwareBeanPostProcessor
-	 * BeanPostProcessorChecker
-	 * CommonAnnotationBeanPostProcessor
-	 * AutowiredAnnotationBeanPostProcessor
-	 * RequiredAnnotationBeanPostProcessor
-	 * AnnotationAwareAspectJAutoProxyCreator
-	 */
+	// 注册到beanFactory中。添加到List<BeanPostProcessor> beanPostProcessors中。
+	// 当前beanPostProcessors中有：
+	// ApplicationContextAwareProcessor
+	// ApplicationListenerDetector
+	// ImportAwareBeanPostProcessor
+	// BeanPostProcessorChecker
+	// CommonAnnotationBeanPostProcessor
+	// AutowiredAnnotationBeanPostProcessor
+	// RequiredAnnotationBeanPostProcessor
+	// AnnotationAwareAspectJAutoProxyCreator
 	registerBeanPostProcessors(beanFactory, nonOrderedPostProcessors); // 注册其余BeanPostProcessor
 
 	// Finally, re-register all internal BeanPostProcessors.
@@ -1650,7 +1641,7 @@ public static void registerBeanPostProcessors(
 	// moving it to the end of the processor chain (for picking up proxies etc).
 	// 添加ApplicationListenerDetector，用于检测ApplicationListeners
 	beanFactory.addBeanPostProcessor(new ApplicationListenerDetector(applicationContext));
-	/*
+	//
 	 当前beanPostProcessors中有：
 		ApplicationContextAwareProcessor
 		ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor
@@ -1660,7 +1651,7 @@ public static void registerBeanPostProcessors(
 		AutowiredAnnotationBeanPostProcessor
 		ApplicationListenerDetector
 		RequiredAnnotationBeanPostProcessor
-	 */
+	 //
 }
 // PostProcessorRegistrationDelegate类
 private static void registerBeanPostProcessors(
@@ -1784,7 +1775,7 @@ protected void registerListeners() {
 
 ### 11. 初始化所有非懒加载的单例Beans
 
-到目前为止，BeanFactory已经创建完成，并且所有的实现了BeanFactoryPostProcessor接口的Bea 都已经初始化并且其中的postProcessBeanFactory(factory)方法已经得到回调执行。而且Spring已经“手动”注册了一些特殊的 Bean，如'environment'、'systemProperties'等。剩下的就是初始化非懒加载的singleton beans了。
+到目前为止，BeanFactory已经创建完成，并且所有的实现了BeanFactoryPostProcessor接口的Bean都已经初始化并且其中的postProcessBeanFactory(factory)方法已经得到回调执行。而且Spring已经“手动”注册了一些特殊的 Bean，如'environment'、'systemProperties'等。剩下的就是初始化非懒加载的singleton beans了。
 
 ```java
 // AbstractApplicationContext类
@@ -1893,7 +1884,7 @@ public void preInstantiateSingletons() throws BeansException {
 }
 ```
 
-接下来，就进入到getBean(beanName)方法了，这个方法经常用来从BeanFactory中获取一个Bean，而初始化的过程也封装在这个方法里。
+接下来，就进入到getBean(beanName)方法了，这个方法经常**用来从BeanFactory中获取一个Bean，而初始化的过程也封装在这个方法里**。
 
 #### (b) getBean/doGetBean
 
@@ -3240,6 +3231,6 @@ protected void finishRefresh() {
 ## TODO
 
 - 分析@Autowired注解的属性注入的过程 AutowiredAnnotationBeanPostProcessor
-- `<context:component-scan basePackages=""/>`的原理
+- `<context:component-scan base-package=""/>`的原理
 - Bean循环依赖及解决办法
 - ConfigurationClassPostProcessor分析(重点)
