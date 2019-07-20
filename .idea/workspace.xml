@@ -212,21 +212,7 @@
       <workItem from="1563108787436" duration="359000" />
       <workItem from="1563119469839" duration="31000" />
       <workItem from="1563524781316" duration="9000" />
-      <workItem from="1563586912482" duration="258000" />
-    </task>
-    <task id="LOCAL-00040" summary="update">
-      <created>1555255428357</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1555255428357</updated>
-    </task>
-    <task id="LOCAL-00041" summary="update">
-      <created>1555374508746</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1555374508746</updated>
+      <workItem from="1563586912482" duration="450000" />
     </task>
     <task id="LOCAL-00042" summary="add 2019-04-16-Dubbo 服务端请求解码.md">
       <created>1555430993607</created>
@@ -557,7 +543,21 @@
       <option name="project" value="LOCAL" />
       <updated>1563587067295</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="update">
+      <created>1563587241597</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1563587241597</updated>
+    </task>
+    <task id="LOCAL-00090" summary="update 2019-07-14-Spring IoC容器源码分析.md">
+      <created>1563587349446</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1563587349446</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,14 +612,14 @@
     <MESSAGE value="add 2019-06-27-String类问题答疑.md" />
     <MESSAGE value="add Thread笔记" />
     <MESSAGE value="add" />
-    <MESSAGE value="update" />
     <MESSAGE value="JDK动态代理" />
     <MESSAGE value="add 2019-07-10-CompletableFuture使用示例.md" />
     <MESSAGE value="addd" />
     <MESSAGE value="add 2019-07-14-Spring IoC容器源码分析.md" />
-    <MESSAGE value="update 2019-07-14-Spring IoC容器源码分析.md" />
     <MESSAGE value="add 2019-07-19-context:component-scan配置的解析与@Autowired注解的属性与方法的值注入.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 2019-07-19-context:component-scan配置的解析与@Autowired注解的属性与方法的值注入.md" />
+    <MESSAGE value="update" />
+    <MESSAGE value="update 2019-07-14-Spring IoC容器源码分析.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 2019-07-14-Spring IoC容器源码分析.md" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="masterDetails">
