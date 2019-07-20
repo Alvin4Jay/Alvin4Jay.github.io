@@ -37,7 +37,7 @@ public class BeanA {
 
 配置信息如下：
 
-```java
+```xml
 <bean id="beanA" class="xyz.coolblog.BeanA">
     <property name="beanB" ref="beanB"/>
 </bean>
