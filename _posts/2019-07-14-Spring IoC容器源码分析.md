@@ -3230,7 +3230,5 @@ protected void finishRefresh() {
 
 ## TODO
 
-- 分析@Autowired注解的属性注入的过程 AutowiredAnnotationBeanPostProcessor
-- `<context:component-scan base-package=""/>`的原理
 - Bean循环依赖及解决办法
 - ConfigurationClassPostProcessor分析(重点)
