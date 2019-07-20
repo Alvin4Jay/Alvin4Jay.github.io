@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,13 +63,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/_posts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/_posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -219,13 +217,7 @@
       <workItem from="1563108787436" duration="359000" />
       <workItem from="1563119469839" duration="31000" />
       <workItem from="1563524781316" duration="9000" />
-    </task>
-    <task id="LOCAL-00039" summary="add 2019-04-14-WeakHashMap源码分析.md">
-      <created>1555255249619</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1555255249619</updated>
+      <workItem from="1563586912482" duration="258000" />
     </task>
     <task id="LOCAL-00040" summary="update">
       <created>1555255428357</created>
@@ -563,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563119490450</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="add 2019-07-19-context:component-scan配置的解析与@Autowired注解的属性与方法的值注入.md">
+      <created>1563587067295</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1563587067295</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,7 +599,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="add Zookeeper学习笔记" />
     <MESSAGE value="add 零拷贝技术概述" />
     <MESSAGE value="add 教你透彻了解红黑树.md" />
     <MESSAGE value="add Dubbo 服务降级分析.md" />
@@ -625,7 +623,8 @@
     <MESSAGE value="addd" />
     <MESSAGE value="add 2019-07-14-Spring IoC容器源码分析.md" />
     <MESSAGE value="update 2019-07-14-Spring IoC容器源码分析.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 2019-07-14-Spring IoC容器源码分析.md" />
+    <MESSAGE value="add 2019-07-19-context:component-scan配置的解析与@Autowired注解的属性与方法的值注入.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 2019-07-19-context:component-scan配置的解析与@Autowired注解的属性与方法的值注入.md" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="masterDetails">

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      `<context:component-scan/>`配置的解析与`@Autowired`注解的属性与方法的值注入
+title:      context:component-scan配置的解析与@Autowired注解的属性与方法的值注入
 subtitle:   AutowiredAnnotationBeanPostProcessor
 date:       2019-07-19
 author:     Jay
