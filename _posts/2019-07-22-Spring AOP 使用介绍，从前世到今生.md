@@ -584,3 +584,7 @@ JoinPoint 除了 getArgs() 外还有一些有用的方法，大家可以进去�
 3. 修改 Application.java 中的代码，或者其他代码，然后重复 1 和 2
 
 （全文完）
+
+### 参考: 
+
+- [Spring AOP 源码分析系列文章导读](http://www.tianxiaobo.com/2018/06/17/Spring-AOP-%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E5%AF%BC%E8%AF%BB/)
