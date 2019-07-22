@@ -58,13 +58,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_posts" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/_posts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -213,27 +213,7 @@
       <workItem from="1563119469839" duration="31000" />
       <workItem from="1563524781316" duration="9000" />
       <workItem from="1563586912482" duration="450000" />
-    </task>
-    <task id="LOCAL-00042" summary="add 2019-04-16-Dubbo 服务端请求解码.md">
-      <created>1555430993607</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1555430993607</updated>
-    </task>
-    <task id="LOCAL-00043" summary="update">
-      <created>1555431100503</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1555431100503</updated>
-    </task>
-    <task id="LOCAL-00044" summary="add">
-      <created>1555547889553</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1555547889553</updated>
+      <workItem from="1563628133636" duration="433000" />
     </task>
     <task id="LOCAL-00045" summary="update">
       <created>1555547976282</created>
@@ -557,7 +537,28 @@
       <option name="project" value="LOCAL" />
       <updated>1563587349446</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="add 2019-07-20-Spring IoC中的循环依赖及解决办法.md">
+      <created>1563628236875</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1563628236875</updated>
+    </task>
+    <task id="LOCAL-00092" summary="update">
+      <created>1563628391296</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1563628391297</updated>
+    </task>
+    <task id="LOCAL-00093" summary="update">
+      <created>1563628579272</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1563628579272</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +595,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="add 零拷贝技术概述" />
     <MESSAGE value="add 教你透彻了解红黑树.md" />
     <MESSAGE value="add Dubbo 服务降级分析.md" />
     <MESSAGE value="add 2019-05-10-Spring AOP 使用介绍，从前世到今生.md" />
@@ -617,9 +617,10 @@
     <MESSAGE value="addd" />
     <MESSAGE value="add 2019-07-14-Spring IoC容器源码分析.md" />
     <MESSAGE value="add 2019-07-19-context:component-scan配置的解析与@Autowired注解的属性与方法的值注入.md" />
-    <MESSAGE value="update" />
     <MESSAGE value="update 2019-07-14-Spring IoC容器源码分析.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 2019-07-14-Spring IoC容器源码分析.md" />
+    <MESSAGE value="add 2019-07-20-Spring IoC中的循环依赖及解决办法.md" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="masterDetails">
