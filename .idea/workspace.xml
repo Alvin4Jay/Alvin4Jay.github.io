@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="" />
+    <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-07-27-Spring AOP源码分析(一)——筛选合适的通知器.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-07-27-Spring AOP源码分析(一)——筛选合适的通知器.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-07-27-Spring AOP源码分析(三)——拦截器链的执行过程分析.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-07-27-Spring AOP源码分析(三)——拦截器链的执行过程分析.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-07-27-Spring AOP源码分析(二)——创建代理对象.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-07-27-Spring AOP源码分析(二)——创建代理对象.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +63,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/_posts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/_posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -214,55 +219,12 @@
       <workItem from="1563524781316" duration="9000" />
       <workItem from="1563586912482" duration="450000" />
       <workItem from="1563628133636" duration="433000" />
-    </task>
-    <task id="LOCAL-00045" summary="update">
-      <created>1555547976282</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1555547976282</updated>
-    </task>
-    <task id="LOCAL-00046" summary="add Zookeeper学习笔记">
-      <created>1555836456443</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1555836456443</updated>
-    </task>
-    <task id="LOCAL-00047" summary="add 零拷贝技术概述">
-      <created>1556375524140</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1556375524140</updated>
-    </task>
-    <task id="LOCAL-00048" summary="add 教你透彻了解红黑树.md">
-      <created>1556632587138</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1556632587138</updated>
-    </task>
-    <task id="LOCAL-00049" summary="add 教你透彻了解红黑树.md">
-      <created>1556633760100</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1556633760100</updated>
-    </task>
-    <task id="LOCAL-00050" summary="add Dubbo 服务降级分析.md">
-      <created>1557242804910</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1557242804910</updated>
-    </task>
-    <task id="LOCAL-00051" summary="update">
-      <created>1557242888622</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1557242888623</updated>
+      <workItem from="1563808192693" duration="60000" />
+      <workItem from="1563810666457" duration="251000" />
+      <workItem from="1563810945445" duration="54000" />
+      <workItem from="1563811088272" duration="12000" />
+      <workItem from="1563844643994" duration="14000" />
+      <workItem from="1564223590313" duration="969000" />
     </task>
     <task id="LOCAL-00052" summary="add 2019-05-10-Spring AOP 使用介绍，从前世到今生.md">
       <created>1557497851315</created>
@@ -558,7 +520,56 @@
       <option name="project" value="LOCAL" />
       <updated>1563628579272</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="rename">
+      <created>1563808229730</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1563808229732</updated>
+    </task>
+    <task id="LOCAL-00095" summary="update">
+      <created>1563810720557</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1563810720557</updated>
+    </task>
+    <task id="LOCAL-00096" summary="update">
+      <created>1563810824723</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1563810824724</updated>
+    </task>
+    <task id="LOCAL-00097" summary="add">
+      <created>1563810973053</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1563810973053</updated>
+    </task>
+    <task id="LOCAL-00098" summary="add 2019-07-27-Spring AOP源码分析(一)——筛选合适的通知器.md">
+      <created>1564224132970</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1564224132970</updated>
+    </task>
+    <task id="LOCAL-00099" summary="add 2019-07-27-Spring AOP源码分析(二)——创建代理对象.md">
+      <created>1564224196785</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1564224196785</updated>
+    </task>
+    <task id="LOCAL-00100" summary="add 2019-07-27-Spring AOP源码分析(三)——拦截器链的执行过程分析.md">
+      <created>1564224213338</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1564224213338</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,10 +606,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="add 教你透彻了解红黑树.md" />
-    <MESSAGE value="add Dubbo 服务降级分析.md" />
-    <MESSAGE value="add 2019-05-10-Spring AOP 使用介绍，从前世到今生.md" />
-    <MESSAGE value="add 2019-05-12-Dubbo源码解析-router.md" />
     <MESSAGE value="add TreeMap分析" />
     <MESSAGE value="add 2019-05-20-ThreadLocalRandom原理剖析.md" />
     <MESSAGE value="add ConcurrentHashMap源码分析(JDK7)" />
@@ -611,7 +618,6 @@
     <MESSAGE value="add 2019-06-25-DelayQueue源码分析.md" />
     <MESSAGE value="add 2019-06-27-String类问题答疑.md" />
     <MESSAGE value="add Thread笔记" />
-    <MESSAGE value="add" />
     <MESSAGE value="JDK动态代理" />
     <MESSAGE value="add 2019-07-10-CompletableFuture使用示例.md" />
     <MESSAGE value="addd" />
@@ -619,8 +625,13 @@
     <MESSAGE value="add 2019-07-19-context:component-scan配置的解析与@Autowired注解的属性与方法的值注入.md" />
     <MESSAGE value="update 2019-07-14-Spring IoC容器源码分析.md" />
     <MESSAGE value="add 2019-07-20-Spring IoC中的循环依赖及解决办法.md" />
+    <MESSAGE value="rename" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="add" />
+    <MESSAGE value="add 2019-07-27-Spring AOP源码分析(一)——筛选合适的通知器.md" />
+    <MESSAGE value="add 2019-07-27-Spring AOP源码分析(二)——创建代理对象.md" />
+    <MESSAGE value="add 2019-07-27-Spring AOP源码分析(三)——拦截器链的执行过程分析.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 2019-07-27-Spring AOP源码分析(三)——拦截器链的执行过程分析.md" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="masterDetails">

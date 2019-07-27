@@ -974,7 +974,7 @@ private static boolean isAspectJAdvice(Advisor advisor) {
 }
 ```
 
-由上面的源码可以看出，extendAdvisors方法调用了AspectJProxyUtils.makeAdvisorChainAspectJCapableIfNecessary方法。至于 makeAdvisorChainAspectJCapableIfNecessary 这个方法，该方法主要的目的是向**通知器列表首部**添加 DefaultPointcutAdvisor类型的通知器，也就是**ExposeInvocationInterceptor.ADVISOR**。至于添加此种类型通知器的原因，会在[后面文章]()里说明，这里不便展开。
+由上面的源码可以看出，extendAdvisors方法调用了AspectJProxyUtils.makeAdvisorChainAspectJCapableIfNecessary方法。至于 makeAdvisorChainAspectJCapableIfNecessary 这个方法，该方法主要的目的是向**通知器列表首部**添加 DefaultPointcutAdvisor类型的通知器，也就是**ExposeInvocationInterceptor.ADVISOR**。至于添加此种类型通知器的原因，会在[后面文章](https://xuanjian1992.top/2019/07/27/Spring-AOP%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%89)-%E6%8B%A6%E6%88%AA%E5%99%A8%E9%93%BE%E7%9A%84%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/)里说明，这里不便展开。
 
 ### 三、总结
 
