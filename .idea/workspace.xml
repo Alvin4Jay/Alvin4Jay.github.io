@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-07-27-Spring AOP源码分析(一)——筛选合适的通知器.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-07-27-Spring AOP源码分析(一)——筛选合适的通知器.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-07-27-Spring AOP源码分析(三)——拦截器链的执行过程分析.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-07-27-Spring AOP源码分析(三)——拦截器链的执行过程分析.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-07-27-Spring AOP源码分析(二)——创建代理对象.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-07-27-Spring AOP源码分析(二)——创建代理对象.md" afterDir="false" />
-    </list>
+    <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,14 +219,7 @@
       <workItem from="1563810945445" duration="54000" />
       <workItem from="1563811088272" duration="12000" />
       <workItem from="1563844643994" duration="14000" />
-      <workItem from="1564223590313" duration="969000" />
-    </task>
-    <task id="LOCAL-00052" summary="add 2019-05-10-Spring AOP 使用介绍，从前世到今生.md">
-      <created>1557497851315</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1557497851317</updated>
+      <workItem from="1564223590313" duration="1089000" />
     </task>
     <task id="LOCAL-00053" summary="update">
       <created>1557497991951</created>
@@ -569,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564224213338</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="update">
+      <created>1564224670980</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1564224670980</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -626,12 +621,12 @@
     <MESSAGE value="update 2019-07-14-Spring IoC容器源码分析.md" />
     <MESSAGE value="add 2019-07-20-Spring IoC中的循环依赖及解决办法.md" />
     <MESSAGE value="rename" />
-    <MESSAGE value="update" />
     <MESSAGE value="add" />
     <MESSAGE value="add 2019-07-27-Spring AOP源码分析(一)——筛选合适的通知器.md" />
     <MESSAGE value="add 2019-07-27-Spring AOP源码分析(二)——创建代理对象.md" />
     <MESSAGE value="add 2019-07-27-Spring AOP源码分析(三)——拦截器链的执行过程分析.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 2019-07-27-Spring AOP源码分析(三)——拦截器链的执行过程分析.md" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="masterDetails">
