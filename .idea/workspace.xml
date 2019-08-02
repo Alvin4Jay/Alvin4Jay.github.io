@@ -58,13 +58,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_posts" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/_posts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -220,13 +220,7 @@
       <workItem from="1563811088272" duration="12000" />
       <workItem from="1563844643994" duration="14000" />
       <workItem from="1564223590313" duration="1089000" />
-    </task>
-    <task id="LOCAL-00053" summary="update">
-      <created>1557497991951</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1557497991952</updated>
+      <workItem from="1564315176937" duration="140000" />
     </task>
     <task id="LOCAL-00054" summary="add 2019-05-12-Dubbo源码解析-router.md">
       <created>1557633693131</created>
@@ -564,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564224670980</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="add Netty服务端启动流程分析">
+      <created>1564315295277</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1564315295277</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +602,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="add TreeMap分析" />
     <MESSAGE value="add 2019-05-20-ThreadLocalRandom原理剖析.md" />
     <MESSAGE value="add ConcurrentHashMap源码分析(JDK7)" />
     <MESSAGE value="addd ConcurrentHashMap源码分析(基于JDK8)" />
@@ -626,7 +626,8 @@
     <MESSAGE value="add 2019-07-27-Spring AOP源码分析(二)——创建代理对象.md" />
     <MESSAGE value="add 2019-07-27-Spring AOP源码分析(三)——拦截器链的执行过程分析.md" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="add Netty服务端启动流程分析" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Netty服务端启动流程分析" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="masterDetails">
