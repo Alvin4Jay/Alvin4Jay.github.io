@@ -58,13 +58,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/_posts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/_posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -221,13 +221,7 @@
       <workItem from="1563844643994" duration="14000" />
       <workItem from="1564223590313" duration="1089000" />
       <workItem from="1564315176937" duration="140000" />
-    </task>
-    <task id="LOCAL-00054" summary="add 2019-05-12-Dubbo源码解析-router.md">
-      <created>1557633693131</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1557633693131</updated>
+      <workItem from="1564752390452" duration="245000" />
     </task>
     <task id="LOCAL-00055" summary="update">
       <created>1557633979784</created>
@@ -565,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564315295277</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="add 2019-08-02-ConfigurationClassPostProcessor源码分析.md">
+      <created>1564752619961</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1564752619961</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +603,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="add 2019-05-20-ThreadLocalRandom原理剖析.md" />
     <MESSAGE value="add ConcurrentHashMap源码分析(JDK7)" />
     <MESSAGE value="addd ConcurrentHashMap源码分析(基于JDK8)" />
     <MESSAGE value="add 2019-06-02-CopyOnWriteArrayList源码分析.md" />
@@ -627,7 +627,8 @@
     <MESSAGE value="add 2019-07-27-Spring AOP源码分析(三)——拦截器链的执行过程分析.md" />
     <MESSAGE value="update" />
     <MESSAGE value="add Netty服务端启动流程分析" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Netty服务端启动流程分析" />
+    <MESSAGE value="add 2019-08-02-ConfigurationClassPostProcessor源码分析.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 2019-08-02-ConfigurationClassPostProcessor源码分析.md" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="masterDetails">

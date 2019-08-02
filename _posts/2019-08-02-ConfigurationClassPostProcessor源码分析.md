@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      ConfigurationClassPostProcessor源码分析
-subtitle:   ConfigurationClassPostProcessor/ConfigurationClassParser/ConfigurationClassBeanDefinitionReader/ConfigurationClassEnhancer
+subtitle:   ConfigurationClassParser/ConfigurationClassBeanDefinitionReader/ConfigurationClassEnhancer
 date:       2019-08-02
 author:     Jay
 header-img: img/home-bg-art.jpg
