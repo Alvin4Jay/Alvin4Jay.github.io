@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="" />
+    <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +60,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_posts" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/_posts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -81,7 +83,9 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
+      <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="WIDTH" value="0" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -94,6 +98,7 @@
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,6 +106,7 @@
     </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -222,34 +228,11 @@
       <workItem from="1564223590313" duration="1089000" />
       <workItem from="1564315176937" duration="140000" />
       <workItem from="1564752390452" duration="245000" />
-    </task>
-    <task id="LOCAL-00055" summary="update">
-      <created>1557633979784</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1557633979785</updated>
-    </task>
-    <task id="LOCAL-00056" summary="add TreeMap分析">
-      <created>1557705898448</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1557705898448</updated>
-    </task>
-    <task id="LOCAL-00057" summary="update">
-      <created>1557706014675</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1557706014675</updated>
-    </task>
-    <task id="LOCAL-00058" summary="add 2019-05-20-ThreadLocalRandom原理剖析.md">
-      <created>1558352602603</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1558352602604</updated>
+      <workItem from="1564752697305" duration="41000" />
+      <workItem from="1564807977846" duration="21000" />
+      <workItem from="1565704885479" duration="294000" />
+      <workItem from="1565741413536" duration="144000" />
+      <workItem from="1565794748418" duration="288000" />
     </task>
     <task id="LOCAL-00059" summary="update">
       <created>1558354788468</created>
@@ -566,7 +549,35 @@
       <option name="project" value="LOCAL" />
       <updated>1564752619961</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="update">
+      <created>1564752718965</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1564752718965</updated>
+    </task>
+    <task id="LOCAL-00105" summary="add 2019-08-13-Spring MVC启动流程分析(xml配置).md">
+      <created>1565705031994</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1565705031994</updated>
+    </task>
+    <task id="LOCAL-00106" summary="add 2019-08-14-Spring MVC DispatcherServlet处理用户请求的流程分析.md">
+      <created>1565741537028</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1565741537028</updated>
+    </task>
+    <task id="LOCAL-00107" summary="add 2019-08-14-Spring MVC HttpMessageConverter转换请求和响应数据的过程分析.md">
+      <created>1565794856021</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1565794856021</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,28 +595,11 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="add ConcurrentHashMap源码分析(JDK7)" />
-    <MESSAGE value="addd ConcurrentHashMap源码分析(基于JDK8)" />
-    <MESSAGE value="add 2019-06-02-CopyOnWriteArrayList源码分析.md" />
     <MESSAGE value="update 2019-03-17-JCF源码阅读目录.md" />
     <MESSAGE value="add 2019-06-09-ArrayBlockingQueue源码分析.md" />
     <MESSAGE value="add 2019-06-09-LinkedBlockingQueue源码分析.md" />
@@ -625,10 +619,13 @@
     <MESSAGE value="add 2019-07-27-Spring AOP源码分析(一)——筛选合适的通知器.md" />
     <MESSAGE value="add 2019-07-27-Spring AOP源码分析(二)——创建代理对象.md" />
     <MESSAGE value="add 2019-07-27-Spring AOP源码分析(三)——拦截器链的执行过程分析.md" />
-    <MESSAGE value="update" />
     <MESSAGE value="add Netty服务端启动流程分析" />
     <MESSAGE value="add 2019-08-02-ConfigurationClassPostProcessor源码分析.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 2019-08-02-ConfigurationClassPostProcessor源码分析.md" />
+    <MESSAGE value="update" />
+    <MESSAGE value="add 2019-08-13-Spring MVC启动流程分析(xml配置).md" />
+    <MESSAGE value="add 2019-08-14-Spring MVC DispatcherServlet处理用户请求的流程分析.md" />
+    <MESSAGE value="add 2019-08-14-Spring MVC HttpMessageConverter转换请求和响应数据的过程分析.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 2019-08-14-Spring MVC HttpMessageConverter转换请求和响应数据的过程分析.md" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="masterDetails">
