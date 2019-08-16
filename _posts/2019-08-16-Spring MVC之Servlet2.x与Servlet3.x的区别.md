@@ -275,7 +275,7 @@ scanned clazz:
 - 等待缓慢服务的响应 — 如 web 服务
 
 ```java
-@WebServlet(urlPatterns = "/async", asyncSupported = true) // Servle声明支持异步
+@WebServlet(urlPatterns = "/async", asyncSupported = true) // Servlet声明支持异步
 public class AsyncServlet extends HttpServlet {
 
     @Override
@@ -319,3 +319,7 @@ public class SlowResourceHandler implements Runnable {
     }
 }
 ```
+
+### 参考文章
+
+- [Servlet 3.0 中的新特性.pdf](https://alvin-jay.oss-cn-hangzhou.aliyuncs.com/Spring%20Framework/Servlet%203.0%20%E4%B8%AD%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7.pdf)
