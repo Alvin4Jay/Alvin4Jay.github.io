@@ -297,7 +297,7 @@ registration.addMapping(getServletMappings());  // 设置mapping
 registration.setAsyncSupported(isAsyncSupported()); // 异步设置
 ```
 
-**由于这里的DispatcherServlet配置为容器启动时直接初始化，因此该DispatcherServlet会经历XML配置的DispatcherServlet相同的初始化流程**，可参考[Spring MVC启动流程分析(xml配置)](https://xuanjian1992.top/2019/08/13/Spring-MVC%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90(xml%E9%85%8D%E7%BD%AE)/)。
+**由于这里的DispatcherServlet配置为容器启动时直接初始化，因此该DispatcherServlet会经历XML配置的DispatcherServlet类似的初始化流程**，可参考[Spring MVC启动流程分析(xml配置)](https://xuanjian1992.top/2019/08/13/Spring-MVC%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90(xml%E9%85%8D%E7%BD%AE)/)。这里DispatcherServlet初始化过程中会刷新上面已创建的WebApplicationContext，此时WebConfig类中的@EnableWebMvc注解起作用，会注册HandlerMapping、HandlerAdapter等Web组件，覆盖(优先于)DispatcherServlet.initStrategies方法中注册默认Web组件的逻辑；同时WebConfig类中的@ComponentScan注解会起作用，扫描指定路径下的Spring组件(如Controller)。
 
 registerDispatcherServlet方法接着向ServletContext注册Filter:
 
