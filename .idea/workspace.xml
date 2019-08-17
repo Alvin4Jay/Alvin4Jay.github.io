@@ -60,13 +60,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/_posts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/_posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -233,20 +233,8 @@
       <workItem from="1565704885479" duration="294000" />
       <workItem from="1565741413536" duration="144000" />
       <workItem from="1565794748418" duration="288000" />
-    </task>
-    <task id="LOCAL-00059" summary="update">
-      <created>1558354788468</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1558354788468</updated>
-    </task>
-    <task id="LOCAL-00060" summary="add ConcurrentHashMap源码分析(JDK7)">
-      <created>1558533418618</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1558533418618</updated>
+      <workItem from="1565914121830" duration="167000" />
+      <workItem from="1565965308548" duration="157000" />
     </task>
     <task id="LOCAL-00061" summary="update">
       <created>1558533588626</created>
@@ -577,7 +565,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565794856021</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="add 2019-08-16-Spring MVC之Servlet2.x与Servlet3.x的区别.md">
+      <created>1565914269494</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1565914269494</updated>
+    </task>
+    <task id="LOCAL-00109" summary="update">
+      <created>1565965395298</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1565965395299</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,7 +602,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="update 2019-03-17-JCF源码阅读目录.md" />
     <MESSAGE value="add 2019-06-09-ArrayBlockingQueue源码分析.md" />
     <MESSAGE value="add 2019-06-09-LinkedBlockingQueue源码分析.md" />
     <MESSAGE value="update.." />
@@ -621,11 +622,12 @@
     <MESSAGE value="add 2019-07-27-Spring AOP源码分析(三)——拦截器链的执行过程分析.md" />
     <MESSAGE value="add Netty服务端启动流程分析" />
     <MESSAGE value="add 2019-08-02-ConfigurationClassPostProcessor源码分析.md" />
-    <MESSAGE value="update" />
     <MESSAGE value="add 2019-08-13-Spring MVC启动流程分析(xml配置).md" />
     <MESSAGE value="add 2019-08-14-Spring MVC DispatcherServlet处理用户请求的流程分析.md" />
     <MESSAGE value="add 2019-08-14-Spring MVC HttpMessageConverter转换请求和响应数据的过程分析.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 2019-08-14-Spring MVC HttpMessageConverter转换请求和响应数据的过程分析.md" />
+    <MESSAGE value="add 2019-08-16-Spring MVC之Servlet2.x与Servlet3.x的区别.md" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="masterDetails">
