@@ -13,8 +13,37 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-08-30-Netty内存管理.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="250">
+                <caret line="1915" column="26" selection-start-line="1915" selection-start-column="25" selection-end-line="1915" selection-end-column="26" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-08-24-Netty pipeline分析(二).md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor>
+                <caret selection-end-line="10" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>##</find>
       <find>#</find>
     </findStrings>
     <replaceStrings>
@@ -24,6 +53,14 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/_posts/2019-08-24-Netty pipeline分析(二).md" />
+        <option value="$PROJECT_DIR$/_posts/2019-08-30-Netty内存管理.md" />
+      </list>
+    </option>
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -44,9 +81,40 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="710" />
+    <option name="y" value="250" />
+    <option name="width" value="1440" />
+    <option name="height" value="817" />
+  </component>
   <component name="ProjectId" id="1MiTfMND3p1WpW4b71hal66BIq4" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Alvin4Jay.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Alvin4Jay.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Alvin4Jay.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Alvin4Jay.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_MANAGE_IGNORE_FILES" value="true" />
@@ -68,13 +136,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_posts" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/_posts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -248,28 +316,9 @@
       <workItem from="1566041503238" duration="160000" />
       <workItem from="1566143492609" duration="141000" />
       <workItem from="1566345350507" duration="207000" />
-      <workItem from="1566517694870" duration="304000" />
-    </task>
-    <task id="LOCAL-00066" summary="add 2019-06-09-ArrayBlockingQueue源码分析.md">
-      <created>1560046031507</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1560046031508</updated>
-    </task>
-    <task id="LOCAL-00067" summary="add 2019-06-09-LinkedBlockingQueue源码分析.md">
-      <created>1560046238847</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1560046238847</updated>
-    </task>
-    <task id="LOCAL-00068" summary="update">
-      <created>1560046315845</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1560046315845</updated>
+      <workItem from="1566517694870" duration="457000" />
+      <workItem from="1566611155438" duration="141000" />
+      <workItem from="1567127264601" duration="118000" />
     </task>
     <task id="LOCAL-00069" summary="update">
       <created>1560046574585</created>
@@ -593,8 +642,70 @@
       <option name="project" value="LOCAL" />
       <updated>1566345536603</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="add 2019-08-23-Netty pipeline分析(一).md">
+      <created>1566518909626</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1566518909626</updated>
+    </task>
+    <task id="LOCAL-00116" summary="add 2019-08-23-Netty pipeline分析(二).md">
+      <created>1566611281280</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1566611281281</updated>
+    </task>
+    <task id="LOCAL-00117" summary="add 2019-08-30-Netty内存管理.md">
+      <created>1567127361367</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1567127361367</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="259000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="710" y="250" width="1440" height="817" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="UI Designer" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Tail" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Cargo" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="9" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -605,6 +716,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -630,9 +747,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="add Thread笔记" />
-    <MESSAGE value="JDK动态代理" />
-    <MESSAGE value="add 2019-07-10-CompletableFuture使用示例.md" />
     <MESSAGE value="addd" />
     <MESSAGE value="add 2019-07-14-Spring IoC容器源码分析.md" />
     <MESSAGE value="add 2019-07-19-context:component-scan配置的解析与@Autowired注解的属性与方法的值注入.md" />
@@ -655,8 +769,43 @@
     <MESSAGE value="add 2019-08-18-Spring Boot下的Servlet、Filter、Listener加载流程分析.md" />
     <MESSAGE value="add 2019-08-19-Netty NioEventLoop分析.md" />
     <MESSAGE value="add 2019-08-21-Netty新连接接入分析.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 2019-08-21-Netty新连接接入分析.md" />
+    <MESSAGE value="add 2019-08-23-Netty pipeline分析(一).md" />
+    <MESSAGE value="add 2019-08-23-Netty pipeline分析(二).md" />
+    <MESSAGE value="add 2019-08-30-Netty内存管理.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 2019-08-30-Netty内存管理.md" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/_posts/2019-08-23-Netty pipeline分析(一).md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-line="10" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-08-24-Netty pipeline分析(二).md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor>
+            <caret selection-end-line="10" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-08-30-Netty内存管理.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="250">
+            <caret line="1915" column="26" selection-start-line="1915" selection-start-column="25" selection-end-line="1915" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
