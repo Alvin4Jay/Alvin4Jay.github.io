@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2020-08-02-MySQL基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-08-02-MySQL基础.md" afterDir="false" />
     </list>
@@ -270,14 +268,8 @@
       <workItem from="1587276054762" duration="9000" />
       <workItem from="1591779849211" duration="132000" />
       <workItem from="1596385108192" duration="572000" />
-      <workItem from="1596555441762" duration="736000" />
-    </task>
-    <task id="LOCAL-00079" summary="add 2019-06-27-String类问题答疑.md">
-      <created>1561646784257</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1561646784257</updated>
+      <workItem from="1596555441762" duration="996000" />
+      <workItem from="1596905154934" duration="165000" />
     </task>
     <task id="LOCAL-00080" summary="add Thread笔记">
       <created>1562165627357</created>
@@ -615,7 +607,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596385318443</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="阅读两篇mysql文章">
+      <created>1596556679060</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1596556679061</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,7 +649,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add 2019-07-27-Spring AOP源码分析(三)——拦截器链的执行过程分析.md" />
     <MESSAGE value="add Netty服务端启动流程分析" />
     <MESSAGE value="add 2019-08-02-ConfigurationClassPostProcessor源码分析.md" />
     <MESSAGE value="add 2019-08-13-Spring MVC启动流程分析(xml配置).md" />
@@ -675,14 +673,15 @@
     <MESSAGE value="update" />
     <MESSAGE value="add 类加载" />
     <MESSAGE value="重新开始记录博客" />
-    <option name="LAST_COMMIT_MESSAGE" value="重新开始记录博客" />
+    <MESSAGE value="阅读两篇mysql文章" />
+    <option name="LAST_COMMIT_MESSAGE" value="阅读两篇mysql文章" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="272" y="24" key="CommitChangelistDialog2" timestamp="1596385318103">
+    <state x="272" y="24" key="CommitChangelistDialog2" timestamp="1596556678770">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="272" y="24" key="CommitChangelistDialog2/0.23.1440.823/-282.-1057.1920.1057@0.23.1440.823" timestamp="1596385318103" />
+    <state x="272" y="24" key="CommitChangelistDialog2/0.23.1440.823/-282.-1057.1920.1057@0.23.1440.823" timestamp="1596556678770" />
     <state width="1398" height="195" key="GridCell.Tab.0.bottom" timestamp="1591779984888">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
@@ -699,10 +698,10 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1398" height="195" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1591779984888" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1596385319568">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1596556680611">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-282.-1057.1920.1057@0.23.1440.823" timestamp="1596385319568" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-282.-1057.1920.1057@0.23.1440.823" timestamp="1596556680611" />
   </component>
   <component name="masterDetails">
     <states>
