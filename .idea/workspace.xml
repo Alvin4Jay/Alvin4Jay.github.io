@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="" />
+    <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-08-02-MySQL基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-08-02-MySQL基础.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,13 +83,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/_posts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/_posts" />
     </key>
   </component>
   <component name="RunManager">
@@ -267,13 +270,8 @@
       <workItem from="1596385108192" duration="572000" />
       <workItem from="1596555441762" duration="996000" />
       <workItem from="1596905154934" duration="202000" />
-    </task>
-    <task id="LOCAL-00081" summary="add">
-      <created>1562505897649</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1562505897649</updated>
+      <workItem from="1596906135943" duration="121000" />
+      <workItem from="1596963097598" duration="3134000" />
     </task>
     <task id="LOCAL-00082" summary="update">
       <created>1562506121848</created>
@@ -611,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596905897742</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="分库分表">
+      <created>1596906243479</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1596906243479</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -646,7 +651,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add 2019-08-02-ConfigurationClassPostProcessor源码分析.md" />
     <MESSAGE value="add 2019-08-13-Spring MVC启动流程分析(xml配置).md" />
     <MESSAGE value="add 2019-08-14-Spring MVC DispatcherServlet处理用户请求的流程分析.md" />
     <MESSAGE value="add 2019-08-14-Spring MVC HttpMessageConverter转换请求和响应数据的过程分析.md" />
@@ -671,15 +675,16 @@
     <MESSAGE value="重新开始记录博客" />
     <MESSAGE value="阅读两篇mysql文章" />
     <MESSAGE value="阅读1篇mysql文章-索引" />
-    <option name="LAST_COMMIT_MESSAGE" value="阅读1篇mysql文章-索引" />
+    <MESSAGE value="分库分表" />
+    <option name="LAST_COMMIT_MESSAGE" value="分库分表" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="81" y="-1056" key="CommitChangelistDialog2" timestamp="1596905897372">
-      <screen x="-282" y="-1057" width="1920" height="1057" />
+    <state x="272" y="24" key="CommitChangelistDialog2" timestamp="1596906243192">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="81" y="-1056" key="CommitChangelistDialog2/0.23.1440.823/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1596905897372" />
-    <state x="272" y="24" key="CommitChangelistDialog2/0.23.1440.823/-282.-1057.1920.1057@0.23.1440.823" timestamp="1596556678770" />
+    <state x="272" y="24" key="CommitChangelistDialog2/0.23.1440.823/-282.-1057.1920.1057@0.23.1440.823" timestamp="1596906243192" />
     <state width="1398" height="195" key="GridCell.Tab.0.bottom" timestamp="1591779984888">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
@@ -696,11 +701,11 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1398" height="195" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1591779984888" />
-    <state x="145" y="-863" key="Vcs.Push.Dialog.v2" timestamp="1596905899032">
-      <screen x="-282" y="-1057" width="1920" height="1057" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1596906244717">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="145" y="-863" key="Vcs.Push.Dialog.v2/0.23.1440.823/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1596905899032" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-282.-1057.1920.1057@0.23.1440.823" timestamp="1596556680611" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-282.-1057.1920.1057@0.23.1440.823" timestamp="1596906244717" />
   </component>
   <component name="masterDetails">
     <states>
