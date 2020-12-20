@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/2020-08-16-Flink学习记录.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-08-02-MySQL基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-08-02-MySQL基础.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +134,7 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -273,14 +271,8 @@
       <workItem from="1596905154934" duration="202000" />
       <workItem from="1596906135943" duration="121000" />
       <workItem from="1596963097598" duration="3360000" />
-      <workItem from="1597502507499" duration="467000" />
-    </task>
-    <task id="LOCAL-00084" summary="add 2019-07-10-CompletableFuture使用示例.md">
-      <created>1562800828704</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1562800828704</updated>
+      <workItem from="1597502507499" duration="512000" />
+      <workItem from="1598576497963" duration="23000" />
     </task>
     <task id="LOCAL-00085" summary="addd">
       <created>1562800926004</created>
@@ -618,11 +610,18 @@
       <option name="project" value="LOCAL" />
       <updated>1596977388334</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="update">
+      <created>1597508898440</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1597508898440</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -682,11 +681,11 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="272" y="24" key="CommitChangelistDialog2" timestamp="1596977388061">
+    <state x="272" y="24" key="CommitChangelistDialog2" timestamp="1597508898173">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="81" y="-1056" key="CommitChangelistDialog2/0.23.1440.823/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1596905897372" />
-    <state x="272" y="24" key="CommitChangelistDialog2/0.23.1440.823/-282.-1057.1920.1057@0.23.1440.823" timestamp="1596977388061" />
+    <state x="272" y="24" key="CommitChangelistDialog2/0.23.1440.823/-282.-1057.1920.1057@0.23.1440.823" timestamp="1597508898173" />
     <state width="1398" height="195" key="GridCell.Tab.0.bottom" timestamp="1591779984888">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
@@ -703,11 +702,11 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1398" height="195" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1591779984888" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1596977389431">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1597508899847">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="145" y="-863" key="Vcs.Push.Dialog.v2/0.23.1440.823/-282.-1057.1920.1057@-282.-1057.1920.1057" timestamp="1596905899032" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-282.-1057.1920.1057@0.23.1440.823" timestamp="1596977389431" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-282.-1057.1920.1057@0.23.1440.823" timestamp="1597508899847" />
   </component>
   <component name="masterDetails">
     <states>
