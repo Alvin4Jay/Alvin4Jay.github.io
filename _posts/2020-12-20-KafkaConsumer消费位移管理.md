@@ -1,7 +1,13 @@
 ---
-layout:     post title:      KafkaConsumer消费位移管理 subtitle:   消息队列 date:       2020-12-20 author:     Jay header-img:
-img/post-bg-hacker.jpg catalog:    true tags:
-- Kafka
+layout:     post 
+title:      KafkaConsumer消费位移管理 
+subtitle:   消息队列 
+date:       2020-12-20 
+author:     Jay 
+header-img: img/post-bg-hacker.jpg 
+catalog:    true 
+tags:
+    - Kafka
 ---
 
 # KafkaConsumer消费位移管理
