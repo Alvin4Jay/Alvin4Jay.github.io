@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="" />
+    <list default="true" id="ede30fab-9e3f-4b06-a174-87501b8664b3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +34,10 @@
   </component>
   <component name="GoVcsConfiguration">
     <option name="GO_FMT" value="false" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="kubernetes-admin@kubernetes" />
+    <option name="namespace" value="default" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="zgTsekiF" />
@@ -64,6 +70,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561518500210" />
@@ -82,6 +89,9 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -277,13 +287,8 @@
       <workItem from="1598576497963" duration="23000" />
       <workItem from="1608450392198" duration="464000" />
       <workItem from="1608450861117" duration="75000" />
-    </task>
-    <task id="LOCAL-00089" summary="update">
-      <created>1563587241597</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1563587241597</updated>
+      <workItem from="1610263243438" duration="242000" />
+      <workItem from="1618392277380" duration="47000" />
     </task>
     <task id="LOCAL-00090" summary="update 2019-07-14-Spring IoC容器源码分析.md">
       <created>1563587349446</created>
@@ -621,7 +626,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608450922563</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="Kafka Topic运维命令">
+      <created>1610263375041</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1610263375042</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +668,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add 2019-08-14-Spring MVC HttpMessageConverter转换请求和响应数据的过程分析.md" />
     <MESSAGE value="add 2019-08-16-Spring MVC之Servlet2.x与Servlet3.x的区别.md" />
     <MESSAGE value="add 2019-08-17-Spring MVC基于Java Config配置的启动流程分析.md" />
     <MESSAGE value="updTE" />
@@ -681,7 +692,8 @@
     <MESSAGE value="mysql基础文章阅读" />
     <MESSAGE value="update" />
     <MESSAGE value="KafkaConsumer消费位移管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="KafkaConsumer消费位移管理" />
+    <MESSAGE value="Kafka Topic运维命令" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kafka Topic运维命令" />
   </component>
   <component name="masterDetails">
     <states>
